@@ -5,11 +5,12 @@ Take all good coding practices and PENALIZE THEM DURING RUNTIME.
 
 
 USAGE
+========
 
 unpython your_file.py
 
-
-====
+notes
+========
 
 The better your coding practices, the more numbers we waste time prime factorizing! The SLOW way. Not the really slow way. Just the normal slow way. It's okay.
 
@@ -32,8 +33,8 @@ Try-Excepts and Fors are sinful
 
 In conclusion, the better your coding practices, the more time is wasted. In fact, unpython is actually written too well. When run on itself, it prime factors 2380 numbers... then infinite loops because it tries run itself on itself and then itself on itself on itself... and so forth.
 
-
-TODO:
+TODO
+========
 
 Make globals encouraged
 
