@@ -1,4 +1,2483 @@
-280
-120
-60
+(1, 'import', (1, 0), (1, 6), 'import sys\n')
+NAME
+(1, 'sys', (1, 7), (1, 10), 'import sys\n')
+NAME
+(4, '\n', (1, 10), (1, 11), 'import sys\n')
+NEWLINE
+(1, 'import', (2, 0), (2, 6), 'import tokenize\n')
+NAME
+(1, 'tokenize', (2, 7), (2, 15), 'import tokenize\n')
+NAME
+(4, '\n', (2, 15), (2, 16), 'import tokenize\n')
+NEWLINE
+(1, 'from', (3, 0), (3, 4), 'from token import *\n')
+NAME
+(1, 'token', (3, 5), (3, 10), 'from token import *\n')
+NAME
+(1, 'import', (3, 11), (3, 17), 'from token import *\n')
+NAME
+(51, '*', (3, 18), (3, 19), 'from token import *\n')
+OP
+(4, '\n', (3, 19), (3, 20), 'from token import *\n')
+NEWLINE
+(54, '\n', (4, 0), (4, 1), '\n')
+NL
+(1, 'penalty', (5, 0), (5, 7), 'penalty = 0\n')
+NAME
+(51, '=', (5, 8), (5, 9), 'penalty = 0\n')
+OP
+(2, '0', (5, 10), (5, 11), 'penalty = 0\n')
+NUMBER
+(4, '\n', (5, 11), (5, 12), 'penalty = 0\n')
+NEWLINE
+(1, 'names', (6, 0), (6, 5), 'names = set()\n')
+NAME
+(51, '=', (6, 6), (6, 7), 'names = set()\n')
+OP
+(1, 'set', (6, 8), (6, 11), 'names = set()\n')
+NAME
+(51, '(', (6, 11), (6, 12), 'names = set()\n')
+OP
+(51, ')', (6, 12), (6, 13), 'names = set()\n')
+OP
+(4, '\n', (6, 13), (6, 14), 'names = set()\n')
+NEWLINE
+(1, 'builtin', (7, 0), (7, 7), 'builtin = set()\n')
+NAME
+(51, '=', (7, 8), (7, 9), 'builtin = set()\n')
+OP
+(1, 'set', (7, 10), (7, 13), 'builtin = set()\n')
+NAME
+(51, '(', (7, 13), (7, 14), 'builtin = set()\n')
+OP
+(51, ')', (7, 14), (7, 15), 'builtin = set()\n')
+OP
+(4, '\n', (7, 15), (7, 16), 'builtin = set()\n')
+NEWLINE
+(54, '\n', (8, 0), (8, 1), '\n')
+NL
+(1, 'map', (9, 0), (9, 3), 'map(lambda x:builtin.add(x), [\n')
+NAME
+(51, '(', (9, 3), (9, 4), 'map(lambda x:builtin.add(x), [\n')
+OP
+(1, 'lambda', (9, 4), (9, 10), 'map(lambda x:builtin.add(x), [\n')
+NAME
+(1, 'x', (9, 11), (9, 12), 'map(lambda x:builtin.add(x), [\n')
+NAME
+(51, ':', (9, 12), (9, 13), 'map(lambda x:builtin.add(x), [\n')
+OP
+(1, 'builtin', (9, 13), (9, 20), 'map(lambda x:builtin.add(x), [\n')
+NAME
+(51, '.', (9, 20), (9, 21), 'map(lambda x:builtin.add(x), [\n')
+OP
+(1, 'add', (9, 21), (9, 24), 'map(lambda x:builtin.add(x), [\n')
+NAME
+(51, '(', (9, 24), (9, 25), 'map(lambda x:builtin.add(x), [\n')
+OP
+(1, 'x', (9, 25), (9, 26), 'map(lambda x:builtin.add(x), [\n')
+NAME
+(51, ')', (9, 26), (9, 27), 'map(lambda x:builtin.add(x), [\n')
+OP
+(51, ',', (9, 27), (9, 28), 'map(lambda x:builtin.add(x), [\n')
+OP
+(51, '[', (9, 29), (9, 30), 'map(lambda x:builtin.add(x), [\n')
+OP
+(54, '\n', (9, 30), (9, 31), 'map(lambda x:builtin.add(x), [\n')
+NL
+(3, '"abs"', (10, 0), (10, 5), '"abs","divmod","input","open","staticmethod",\n')
+STRING
+(51, ',', (10, 5), (10, 6), '"abs","divmod","input","open","staticmethod",\n')
+OP
+(3, '"divmod"', (10, 6), (10, 14), '"abs","divmod","input","open","staticmethod",\n')
+STRING
+(51, ',', (10, 14), (10, 15), '"abs","divmod","input","open","staticmethod",\n')
+OP
+(3, '"input"', (10, 15), (10, 22), '"abs","divmod","input","open","staticmethod",\n')
+STRING
+(51, ',', (10, 22), (10, 23), '"abs","divmod","input","open","staticmethod",\n')
+OP
+(3, '"open"', (10, 23), (10, 29), '"abs","divmod","input","open","staticmethod",\n')
+STRING
+(51, ',', (10, 29), (10, 30), '"abs","divmod","input","open","staticmethod",\n')
+OP
+(3, '"staticmethod"', (10, 30), (10, 44), '"abs","divmod","input","open","staticmethod",\n')
+STRING
+(51, ',', (10, 44), (10, 45), '"abs","divmod","input","open","staticmethod",\n')
+OP
+(54, '\n', (10, 45), (10, 46), '"abs","divmod","input","open","staticmethod",\n')
+NL
+(3, '"all"', (11, 0), (11, 5), '"all","enumerate","int","ord","str",\n')
+STRING
+(51, ',', (11, 5), (11, 6), '"all","enumerate","int","ord","str",\n')
+OP
+(3, '"enumerate"', (11, 6), (11, 17), '"all","enumerate","int","ord","str",\n')
+STRING
+(51, ',', (11, 17), (11, 18), '"all","enumerate","int","ord","str",\n')
+OP
+(3, '"int"', (11, 18), (11, 23), '"all","enumerate","int","ord","str",\n')
+STRING
+(51, ',', (11, 23), (11, 24), '"all","enumerate","int","ord","str",\n')
+OP
+(3, '"ord"', (11, 24), (11, 29), '"all","enumerate","int","ord","str",\n')
+STRING
+(51, ',', (11, 29), (11, 30), '"all","enumerate","int","ord","str",\n')
+OP
+(3, '"str"', (11, 30), (11, 35), '"all","enumerate","int","ord","str",\n')
+STRING
+(51, ',', (11, 35), (11, 36), '"all","enumerate","int","ord","str",\n')
+OP
+(54, '\n', (11, 36), (11, 37), '"all","enumerate","int","ord","str",\n')
+NL
+(3, '"any"', (12, 0), (12, 5), '"any","eval","isinstance","pow","sum",\n')
+STRING
+(51, ',', (12, 5), (12, 6), '"any","eval","isinstance","pow","sum",\n')
+OP
+(3, '"eval"', (12, 6), (12, 12), '"any","eval","isinstance","pow","sum",\n')
+STRING
+(51, ',', (12, 12), (12, 13), '"any","eval","isinstance","pow","sum",\n')
+OP
+(3, '"isinstance"', (12, 13), (12, 25), '"any","eval","isinstance","pow","sum",\n')
+STRING
+(51, ',', (12, 25), (12, 26), '"any","eval","isinstance","pow","sum",\n')
+OP
+(3, '"pow"', (12, 26), (12, 31), '"any","eval","isinstance","pow","sum",\n')
+STRING
+(51, ',', (12, 31), (12, 32), '"any","eval","isinstance","pow","sum",\n')
+OP
+(3, '"sum"', (12, 32), (12, 37), '"any","eval","isinstance","pow","sum",\n')
+STRING
+(51, ',', (12, 37), (12, 38), '"any","eval","isinstance","pow","sum",\n')
+OP
+(54, '\n', (12, 38), (12, 39), '"any","eval","isinstance","pow","sum",\n')
+NL
+(3, '"basestring"', (13, 0), (13, 12), '"basestring","execfile","issubclass","print","super",\n')
+STRING
+(51, ',', (13, 12), (13, 13), '"basestring","execfile","issubclass","print","super",\n')
+OP
+(3, '"execfile"', (13, 13), (13, 23), '"basestring","execfile","issubclass","print","super",\n')
+STRING
+(51, ',', (13, 23), (13, 24), '"basestring","execfile","issubclass","print","super",\n')
+OP
+(3, '"issubclass"', (13, 24), (13, 36), '"basestring","execfile","issubclass","print","super",\n')
+STRING
+(51, ',', (13, 36), (13, 37), '"basestring","execfile","issubclass","print","super",\n')
+OP
+(3, '"print"', (13, 37), (13, 44), '"basestring","execfile","issubclass","print","super",\n')
+STRING
+(51, ',', (13, 44), (13, 45), '"basestring","execfile","issubclass","print","super",\n')
+OP
+(3, '"super"', (13, 45), (13, 52), '"basestring","execfile","issubclass","print","super",\n')
+STRING
+(51, ',', (13, 52), (13, 53), '"basestring","execfile","issubclass","print","super",\n')
+OP
+(54, '\n', (13, 53), (13, 54), '"basestring","execfile","issubclass","print","super",\n')
+NL
+(3, '"bin"', (14, 0), (14, 5), '"bin","file","iter","property","tuple",\n')
+STRING
+(51, ',', (14, 5), (14, 6), '"bin","file","iter","property","tuple",\n')
+OP
+(3, '"file"', (14, 6), (14, 12), '"bin","file","iter","property","tuple",\n')
+STRING
+(51, ',', (14, 12), (14, 13), '"bin","file","iter","property","tuple",\n')
+OP
+(3, '"iter"', (14, 13), (14, 19), '"bin","file","iter","property","tuple",\n')
+STRING
+(51, ',', (14, 19), (14, 20), '"bin","file","iter","property","tuple",\n')
+OP
+(3, '"property"', (14, 20), (14, 30), '"bin","file","iter","property","tuple",\n')
+STRING
+(51, ',', (14, 30), (14, 31), '"bin","file","iter","property","tuple",\n')
+OP
+(3, '"tuple"', (14, 31), (14, 38), '"bin","file","iter","property","tuple",\n')
+STRING
+(51, ',', (14, 38), (14, 39), '"bin","file","iter","property","tuple",\n')
+OP
+(54, '\n', (14, 39), (14, 40), '"bin","file","iter","property","tuple",\n')
+NL
+(3, '"bool"', (15, 0), (15, 6), '"bool","filter","len","range","type",\n')
+STRING
+(51, ',', (15, 6), (15, 7), '"bool","filter","len","range","type",\n')
+OP
+(3, '"filter"', (15, 7), (15, 15), '"bool","filter","len","range","type",\n')
+STRING
+(51, ',', (15, 15), (15, 16), '"bool","filter","len","range","type",\n')
+OP
+(3, '"len"', (15, 16), (15, 21), '"bool","filter","len","range","type",\n')
+STRING
+(51, ',', (15, 21), (15, 22), '"bool","filter","len","range","type",\n')
+OP
+(3, '"range"', (15, 22), (15, 29), '"bool","filter","len","range","type",\n')
+STRING
+(51, ',', (15, 29), (15, 30), '"bool","filter","len","range","type",\n')
+OP
+(3, '"type"', (15, 30), (15, 36), '"bool","filter","len","range","type",\n')
+STRING
+(51, ',', (15, 36), (15, 37), '"bool","filter","len","range","type",\n')
+OP
+(54, '\n', (15, 37), (15, 38), '"bool","filter","len","range","type",\n')
+NL
+(3, '"bytearray"', (16, 0), (16, 11), '"bytearray","float","list","raw_input","unichr",\n')
+STRING
+(51, ',', (16, 11), (16, 12), '"bytearray","float","list","raw_input","unichr",\n')
+OP
+(3, '"float"', (16, 12), (16, 19), '"bytearray","float","list","raw_input","unichr",\n')
+STRING
+(51, ',', (16, 19), (16, 20), '"bytearray","float","list","raw_input","unichr",\n')
+OP
+(3, '"list"', (16, 20), (16, 26), '"bytearray","float","list","raw_input","unichr",\n')
+STRING
+(51, ',', (16, 26), (16, 27), '"bytearray","float","list","raw_input","unichr",\n')
+OP
+(3, '"raw_input"', (16, 27), (16, 38), '"bytearray","float","list","raw_input","unichr",\n')
+STRING
+(51, ',', (16, 38), (16, 39), '"bytearray","float","list","raw_input","unichr",\n')
+OP
+(3, '"unichr"', (16, 39), (16, 47), '"bytearray","float","list","raw_input","unichr",\n')
+STRING
+(51, ',', (16, 47), (16, 48), '"bytearray","float","list","raw_input","unichr",\n')
+OP
+(54, '\n', (16, 48), (16, 49), '"bytearray","float","list","raw_input","unichr",\n')
+NL
+(3, '"callable"', (17, 0), (17, 10), '"callable","format","locals","reduce","unicode",\n')
+STRING
+(51, ',', (17, 10), (17, 11), '"callable","format","locals","reduce","unicode",\n')
+OP
+(3, '"format"', (17, 11), (17, 19), '"callable","format","locals","reduce","unicode",\n')
+STRING
+(51, ',', (17, 19), (17, 20), '"callable","format","locals","reduce","unicode",\n')
+OP
+(3, '"locals"', (17, 20), (17, 28), '"callable","format","locals","reduce","unicode",\n')
+STRING
+(51, ',', (17, 28), (17, 29), '"callable","format","locals","reduce","unicode",\n')
+OP
+(3, '"reduce"', (17, 29), (17, 37), '"callable","format","locals","reduce","unicode",\n')
+STRING
+(51, ',', (17, 37), (17, 38), '"callable","format","locals","reduce","unicode",\n')
+OP
+(3, '"unicode"', (17, 38), (17, 47), '"callable","format","locals","reduce","unicode",\n')
+STRING
+(51, ',', (17, 47), (17, 48), '"callable","format","locals","reduce","unicode",\n')
+OP
+(54, '\n', (17, 48), (17, 49), '"callable","format","locals","reduce","unicode",\n')
+NL
+(3, '"chr"', (18, 0), (18, 5), '"chr","frozenset","long","reload","vars",\n')
+STRING
+(51, ',', (18, 5), (18, 6), '"chr","frozenset","long","reload","vars",\n')
+OP
+(3, '"frozenset"', (18, 6), (18, 17), '"chr","frozenset","long","reload","vars",\n')
+STRING
+(51, ',', (18, 17), (18, 18), '"chr","frozenset","long","reload","vars",\n')
+OP
+(3, '"long"', (18, 18), (18, 24), '"chr","frozenset","long","reload","vars",\n')
+STRING
+(51, ',', (18, 24), (18, 25), '"chr","frozenset","long","reload","vars",\n')
+OP
+(3, '"reload"', (18, 25), (18, 33), '"chr","frozenset","long","reload","vars",\n')
+STRING
+(51, ',', (18, 33), (18, 34), '"chr","frozenset","long","reload","vars",\n')
+OP
+(3, '"vars"', (18, 34), (18, 40), '"chr","frozenset","long","reload","vars",\n')
+STRING
+(51, ',', (18, 40), (18, 41), '"chr","frozenset","long","reload","vars",\n')
+OP
+(54, '\n', (18, 41), (18, 42), '"chr","frozenset","long","reload","vars",\n')
+NL
+(3, '"classmethod"', (19, 0), (19, 13), '"classmethod","getattr","map","repr","xrange",\n')
+STRING
+(51, ',', (19, 13), (19, 14), '"classmethod","getattr","map","repr","xrange",\n')
+OP
+(3, '"getattr"', (19, 14), (19, 23), '"classmethod","getattr","map","repr","xrange",\n')
+STRING
+(51, ',', (19, 23), (19, 24), '"classmethod","getattr","map","repr","xrange",\n')
+OP
+(3, '"map"', (19, 24), (19, 29), '"classmethod","getattr","map","repr","xrange",\n')
+STRING
+(51, ',', (19, 29), (19, 30), '"classmethod","getattr","map","repr","xrange",\n')
+OP
+(3, '"repr"', (19, 30), (19, 36), '"classmethod","getattr","map","repr","xrange",\n')
+STRING
+(51, ',', (19, 36), (19, 37), '"classmethod","getattr","map","repr","xrange",\n')
+OP
+(3, '"xrange"', (19, 37), (19, 45), '"classmethod","getattr","map","repr","xrange",\n')
+STRING
+(51, ',', (19, 45), (19, 46), '"classmethod","getattr","map","repr","xrange",\n')
+OP
+(54, '\n', (19, 46), (19, 47), '"classmethod","getattr","map","repr","xrange",\n')
+NL
+(3, '"cmp"', (20, 0), (20, 5), '"cmp","globals","max","reversed","zip",\n')
+STRING
+(51, ',', (20, 5), (20, 6), '"cmp","globals","max","reversed","zip",\n')
+OP
+(3, '"globals"', (20, 6), (20, 15), '"cmp","globals","max","reversed","zip",\n')
+STRING
+(51, ',', (20, 15), (20, 16), '"cmp","globals","max","reversed","zip",\n')
+OP
+(3, '"max"', (20, 16), (20, 21), '"cmp","globals","max","reversed","zip",\n')
+STRING
+(51, ',', (20, 21), (20, 22), '"cmp","globals","max","reversed","zip",\n')
+OP
+(3, '"reversed"', (20, 22), (20, 32), '"cmp","globals","max","reversed","zip",\n')
+STRING
+(51, ',', (20, 32), (20, 33), '"cmp","globals","max","reversed","zip",\n')
+OP
+(3, '"zip"', (20, 33), (20, 38), '"cmp","globals","max","reversed","zip",\n')
+STRING
+(51, ',', (20, 38), (20, 39), '"cmp","globals","max","reversed","zip",\n')
+OP
+(54, '\n', (20, 39), (20, 40), '"cmp","globals","max","reversed","zip",\n')
+NL
+(3, '"compile"', (21, 0), (21, 9), '"compile","hasattr","memoryview","round","__import__",\n')
+STRING
+(51, ',', (21, 9), (21, 10), '"compile","hasattr","memoryview","round","__import__",\n')
+OP
+(3, '"hasattr"', (21, 10), (21, 19), '"compile","hasattr","memoryview","round","__import__",\n')
+STRING
+(51, ',', (21, 19), (21, 20), '"compile","hasattr","memoryview","round","__import__",\n')
+OP
+(3, '"memoryview"', (21, 20), (21, 32), '"compile","hasattr","memoryview","round","__import__",\n')
+STRING
+(51, ',', (21, 32), (21, 33), '"compile","hasattr","memoryview","round","__import__",\n')
+OP
+(3, '"round"', (21, 33), (21, 40), '"compile","hasattr","memoryview","round","__import__",\n')
+STRING
+(51, ',', (21, 40), (21, 41), '"compile","hasattr","memoryview","round","__import__",\n')
+OP
+(3, '"__import__"', (21, 41), (21, 53), '"compile","hasattr","memoryview","round","__import__",\n')
+STRING
+(51, ',', (21, 53), (21, 54), '"compile","hasattr","memoryview","round","__import__",\n')
+OP
+(54, '\n', (21, 54), (21, 55), '"compile","hasattr","memoryview","round","__import__",\n')
+NL
+(3, '"complex"', (22, 0), (22, 9), '"complex","hash","min","set","apply",\n')
+STRING
+(51, ',', (22, 9), (22, 10), '"complex","hash","min","set","apply",\n')
+OP
+(3, '"hash"', (22, 10), (22, 16), '"complex","hash","min","set","apply",\n')
+STRING
+(51, ',', (22, 16), (22, 17), '"complex","hash","min","set","apply",\n')
+OP
+(3, '"min"', (22, 17), (22, 22), '"complex","hash","min","set","apply",\n')
+STRING
+(51, ',', (22, 22), (22, 23), '"complex","hash","min","set","apply",\n')
+OP
+(3, '"set"', (22, 23), (22, 28), '"complex","hash","min","set","apply",\n')
+STRING
+(51, ',', (22, 28), (22, 29), '"complex","hash","min","set","apply",\n')
+OP
+(3, '"apply"', (22, 29), (22, 36), '"complex","hash","min","set","apply",\n')
+STRING
+(51, ',', (22, 36), (22, 37), '"complex","hash","min","set","apply",\n')
+OP
+(54, '\n', (22, 37), (22, 38), '"complex","hash","min","set","apply",\n')
+NL
+(3, '"delattr"', (23, 0), (23, 9), '"delattr","help","next","setattr","buffer",\n')
+STRING
+(51, ',', (23, 9), (23, 10), '"delattr","help","next","setattr","buffer",\n')
+OP
+(3, '"help"', (23, 10), (23, 16), '"delattr","help","next","setattr","buffer",\n')
+STRING
+(51, ',', (23, 16), (23, 17), '"delattr","help","next","setattr","buffer",\n')
+OP
+(3, '"next"', (23, 17), (23, 23), '"delattr","help","next","setattr","buffer",\n')
+STRING
+(51, ',', (23, 23), (23, 24), '"delattr","help","next","setattr","buffer",\n')
+OP
+(3, '"setattr"', (23, 24), (23, 33), '"delattr","help","next","setattr","buffer",\n')
+STRING
+(51, ',', (23, 33), (23, 34), '"delattr","help","next","setattr","buffer",\n')
+OP
+(3, '"buffer"', (23, 34), (23, 42), '"delattr","help","next","setattr","buffer",\n')
+STRING
+(51, ',', (23, 42), (23, 43), '"delattr","help","next","setattr","buffer",\n')
+OP
+(54, '\n', (23, 43), (23, 44), '"delattr","help","next","setattr","buffer",\n')
+NL
+(3, '"dict"', (24, 0), (24, 6), '"dict","hex","object","slice","coerce",\n')
+STRING
+(51, ',', (24, 6), (24, 7), '"dict","hex","object","slice","coerce",\n')
+OP
+(3, '"hex"', (24, 7), (24, 12), '"dict","hex","object","slice","coerce",\n')
+STRING
+(51, ',', (24, 12), (24, 13), '"dict","hex","object","slice","coerce",\n')
+OP
+(3, '"object"', (24, 13), (24, 21), '"dict","hex","object","slice","coerce",\n')
+STRING
+(51, ',', (24, 21), (24, 22), '"dict","hex","object","slice","coerce",\n')
+OP
+(3, '"slice"', (24, 22), (24, 29), '"dict","hex","object","slice","coerce",\n')
+STRING
+(51, ',', (24, 29), (24, 30), '"dict","hex","object","slice","coerce",\n')
+OP
+(3, '"coerce"', (24, 30), (24, 38), '"dict","hex","object","slice","coerce",\n')
+STRING
+(51, ',', (24, 38), (24, 39), '"dict","hex","object","slice","coerce",\n')
+OP
+(54, '\n', (24, 39), (24, 40), '"dict","hex","object","slice","coerce",\n')
+NL
+(3, '"dir"', (25, 0), (25, 5), '"dir","id","oct","sorted","intern"])\n')
+STRING
+(51, ',', (25, 5), (25, 6), '"dir","id","oct","sorted","intern"])\n')
+OP
+(3, '"id"', (25, 6), (25, 10), '"dir","id","oct","sorted","intern"])\n')
+STRING
+(51, ',', (25, 10), (25, 11), '"dir","id","oct","sorted","intern"])\n')
+OP
+(3, '"oct"', (25, 11), (25, 16), '"dir","id","oct","sorted","intern"])\n')
+STRING
+(51, ',', (25, 16), (25, 17), '"dir","id","oct","sorted","intern"])\n')
+OP
+(3, '"sorted"', (25, 17), (25, 25), '"dir","id","oct","sorted","intern"])\n')
+STRING
+(51, ',', (25, 25), (25, 26), '"dir","id","oct","sorted","intern"])\n')
+OP
+(3, '"intern"', (25, 26), (25, 34), '"dir","id","oct","sorted","intern"])\n')
+STRING
+(51, ']', (25, 34), (25, 35), '"dir","id","oct","sorted","intern"])\n')
+OP
+(51, ')', (25, 35), (25, 36), '"dir","id","oct","sorted","intern"])\n')
+OP
+(4, '\n', (25, 36), (25, 37), '"dir","id","oct","sorted","intern"])\n')
+NEWLINE
+(54, '\n', (26, 0), (26, 1), '\n')
+NL
+(1, 'reserved', (27, 0), (27, 8), 'reserved = set()\n')
+NAME
+(51, '=', (27, 9), (27, 10), 'reserved = set()\n')
+OP
+(1, 'set', (27, 11), (27, 14), 'reserved = set()\n')
+NAME
+(51, '(', (27, 14), (27, 15), 'reserved = set()\n')
+OP
+(51, ')', (27, 15), (27, 16), 'reserved = set()\n')
+OP
+(4, '\n', (27, 16), (27, 17), 'reserved = set()\n')
+NEWLINE
+(54, '\n', (28, 0), (28, 1), '\n')
+NL
+(1, 'map', (29, 0), (29, 3), 'map(lambda x:reserved.add(x), [\n')
+NAME
+(51, '(', (29, 3), (29, 4), 'map(lambda x:reserved.add(x), [\n')
+OP
+(1, 'lambda', (29, 4), (29, 10), 'map(lambda x:reserved.add(x), [\n')
+NAME
+(1, 'x', (29, 11), (29, 12), 'map(lambda x:reserved.add(x), [\n')
+NAME
+(51, ':', (29, 12), (29, 13), 'map(lambda x:reserved.add(x), [\n')
+OP
+(1, 'reserved', (29, 13), (29, 21), 'map(lambda x:reserved.add(x), [\n')
+NAME
+(51, '.', (29, 21), (29, 22), 'map(lambda x:reserved.add(x), [\n')
+OP
+(1, 'add', (29, 22), (29, 25), 'map(lambda x:reserved.add(x), [\n')
+NAME
+(51, '(', (29, 25), (29, 26), 'map(lambda x:reserved.add(x), [\n')
+OP
+(1, 'x', (29, 26), (29, 27), 'map(lambda x:reserved.add(x), [\n')
+NAME
+(51, ')', (29, 27), (29, 28), 'map(lambda x:reserved.add(x), [\n')
+OP
+(51, ',', (29, 28), (29, 29), 'map(lambda x:reserved.add(x), [\n')
+OP
+(51, '[', (29, 30), (29, 31), 'map(lambda x:reserved.add(x), [\n')
+OP
+(54, '\n', (29, 31), (29, 32), 'map(lambda x:reserved.add(x), [\n')
+NL
+(3, '"and"', (30, 0), (30, 5), '"and","del","from","not","while",\n')
+STRING
+(51, ',', (30, 5), (30, 6), '"and","del","from","not","while",\n')
+OP
+(3, '"del"', (30, 6), (30, 11), '"and","del","from","not","while",\n')
+STRING
+(51, ',', (30, 11), (30, 12), '"and","del","from","not","while",\n')
+OP
+(3, '"from"', (30, 12), (30, 18), '"and","del","from","not","while",\n')
+STRING
+(51, ',', (30, 18), (30, 19), '"and","del","from","not","while",\n')
+OP
+(3, '"not"', (30, 19), (30, 24), '"and","del","from","not","while",\n')
+STRING
+(51, ',', (30, 24), (30, 25), '"and","del","from","not","while",\n')
+OP
+(3, '"while"', (30, 25), (30, 32), '"and","del","from","not","while",\n')
+STRING
+(51, ',', (30, 32), (30, 33), '"and","del","from","not","while",\n')
+OP
+(54, '\n', (30, 33), (30, 34), '"and","del","from","not","while",\n')
+NL
+(3, '"as"', (31, 0), (31, 4), '"as","elif","global","or","with",\n')
+STRING
+(51, ',', (31, 4), (31, 5), '"as","elif","global","or","with",\n')
+OP
+(3, '"elif"', (31, 5), (31, 11), '"as","elif","global","or","with",\n')
+STRING
+(51, ',', (31, 11), (31, 12), '"as","elif","global","or","with",\n')
+OP
+(3, '"global"', (31, 12), (31, 20), '"as","elif","global","or","with",\n')
+STRING
+(51, ',', (31, 20), (31, 21), '"as","elif","global","or","with",\n')
+OP
+(3, '"or"', (31, 21), (31, 25), '"as","elif","global","or","with",\n')
+STRING
+(51, ',', (31, 25), (31, 26), '"as","elif","global","or","with",\n')
+OP
+(3, '"with"', (31, 26), (31, 32), '"as","elif","global","or","with",\n')
+STRING
+(51, ',', (31, 32), (31, 33), '"as","elif","global","or","with",\n')
+OP
+(54, '\n', (31, 33), (31, 34), '"as","elif","global","or","with",\n')
+NL
+(3, '"assert"', (32, 0), (32, 8), '"assert","else","if","pass","yield",\n')
+STRING
+(51, ',', (32, 8), (32, 9), '"assert","else","if","pass","yield",\n')
+OP
+(3, '"else"', (32, 9), (32, 15), '"assert","else","if","pass","yield",\n')
+STRING
+(51, ',', (32, 15), (32, 16), '"assert","else","if","pass","yield",\n')
+OP
+(3, '"if"', (32, 16), (32, 20), '"assert","else","if","pass","yield",\n')
+STRING
+(51, ',', (32, 20), (32, 21), '"assert","else","if","pass","yield",\n')
+OP
+(3, '"pass"', (32, 21), (32, 27), '"assert","else","if","pass","yield",\n')
+STRING
+(51, ',', (32, 27), (32, 28), '"assert","else","if","pass","yield",\n')
+OP
+(3, '"yield"', (32, 28), (32, 35), '"assert","else","if","pass","yield",\n')
+STRING
+(51, ',', (32, 35), (32, 36), '"assert","else","if","pass","yield",\n')
+OP
+(54, '\n', (32, 36), (32, 37), '"assert","else","if","pass","yield",\n')
+NL
+(3, '"break"', (33, 0), (33, 7), '"break","except","import","print",\n')
+STRING
+(51, ',', (33, 7), (33, 8), '"break","except","import","print",\n')
+OP
+(3, '"except"', (33, 8), (33, 16), '"break","except","import","print",\n')
+STRING
+(51, ',', (33, 16), (33, 17), '"break","except","import","print",\n')
+OP
+(3, '"import"', (33, 17), (33, 25), '"break","except","import","print",\n')
+STRING
+(51, ',', (33, 25), (33, 26), '"break","except","import","print",\n')
+OP
+(3, '"print"', (33, 26), (33, 33), '"break","except","import","print",\n')
+STRING
+(51, ',', (33, 33), (33, 34), '"break","except","import","print",\n')
+OP
+(54, '\n', (33, 34), (33, 35), '"break","except","import","print",\n')
+NL
+(3, '"class"', (34, 0), (34, 7), '"class","exec","in","raise",\n')
+STRING
+(51, ',', (34, 7), (34, 8), '"class","exec","in","raise",\n')
+OP
+(3, '"exec"', (34, 8), (34, 14), '"class","exec","in","raise",\n')
+STRING
+(51, ',', (34, 14), (34, 15), '"class","exec","in","raise",\n')
+OP
+(3, '"in"', (34, 15), (34, 19), '"class","exec","in","raise",\n')
+STRING
+(51, ',', (34, 19), (34, 20), '"class","exec","in","raise",\n')
+OP
+(3, '"raise"', (34, 20), (34, 27), '"class","exec","in","raise",\n')
+STRING
+(51, ',', (34, 27), (34, 28), '"class","exec","in","raise",\n')
+OP
+(54, '\n', (34, 28), (34, 29), '"class","exec","in","raise",\n')
+NL
+(3, '"continue"', (35, 0), (35, 10), '"continue","finally","is","return",\n')
+STRING
+(51, ',', (35, 10), (35, 11), '"continue","finally","is","return",\n')
+OP
+(3, '"finally"', (35, 11), (35, 20), '"continue","finally","is","return",\n')
+STRING
+(51, ',', (35, 20), (35, 21), '"continue","finally","is","return",\n')
+OP
+(3, '"is"', (35, 21), (35, 25), '"continue","finally","is","return",\n')
+STRING
+(51, ',', (35, 25), (35, 26), '"continue","finally","is","return",\n')
+OP
+(3, '"return"', (35, 26), (35, 34), '"continue","finally","is","return",\n')
+STRING
+(51, ',', (35, 34), (35, 35), '"continue","finally","is","return",\n')
+OP
+(54, '\n', (35, 35), (35, 36), '"continue","finally","is","return",\n')
+NL
+(3, '"def"', (36, 0), (36, 5), '"def","for","lambda","try"])\n')
+STRING
+(51, ',', (36, 5), (36, 6), '"def","for","lambda","try"])\n')
+OP
+(3, '"for"', (36, 6), (36, 11), '"def","for","lambda","try"])\n')
+STRING
+(51, ',', (36, 11), (36, 12), '"def","for","lambda","try"])\n')
+OP
+(3, '"lambda"', (36, 12), (36, 20), '"def","for","lambda","try"])\n')
+STRING
+(51, ',', (36, 20), (36, 21), '"def","for","lambda","try"])\n')
+OP
+(3, '"try"', (36, 21), (36, 26), '"def","for","lambda","try"])\n')
+STRING
+(51, ']', (36, 26), (36, 27), '"def","for","lambda","try"])\n')
+OP
+(51, ')', (36, 27), (36, 28), '"def","for","lambda","try"])\n')
+OP
+(4, '\n', (36, 28), (36, 29), '"def","for","lambda","try"])\n')
+NEWLINE
+(54, '\n', (37, 0), (37, 1), '\n')
+NL
+(1, 'tok_names', (38, 0), (38, 9), "tok_names = {0: 'ENDMARKER',\n")
+NAME
+(51, '=', (38, 10), (38, 11), "tok_names = {0: 'ENDMARKER',\n")
+OP
+(51, '{', (38, 12), (38, 13), "tok_names = {0: 'ENDMARKER',\n")
+OP
+(2, '0', (38, 13), (38, 14), "tok_names = {0: 'ENDMARKER',\n")
+NUMBER
+(51, ':', (38, 14), (38, 15), "tok_names = {0: 'ENDMARKER',\n")
+OP
+(3, "'ENDMARKER'", (38, 16), (38, 27), "tok_names = {0: 'ENDMARKER',\n")
+STRING
+(51, ',', (38, 27), (38, 28), "tok_names = {0: 'ENDMARKER',\n")
+OP
+(54, '\n', (38, 28), (38, 29), "tok_names = {0: 'ENDMARKER',\n")
+NL
+(2, '256', (39, 1), (39, 4), " 256: 'NT_OFFSET',\n")
+NUMBER
+(51, ':', (39, 4), (39, 5), " 256: 'NT_OFFSET',\n")
+OP
+(3, "'NT_OFFSET'", (39, 6), (39, 17), " 256: 'NT_OFFSET',\n")
+STRING
+(51, ',', (39, 17), (39, 18), " 256: 'NT_OFFSET',\n")
+OP
+(54, '\n', (39, 18), (39, 19), " 256: 'NT_OFFSET',\n")
+NL
+(2, '2', (40, 1), (40, 2), " 2: 'NUMBER',\n")
+NUMBER
+(51, ':', (40, 2), (40, 3), " 2: 'NUMBER',\n")
+OP
+(3, "'NUMBER'", (40, 4), (40, 12), " 2: 'NUMBER',\n")
+STRING
+(51, ',', (40, 12), (40, 13), " 2: 'NUMBER',\n")
+OP
+(54, '\n', (40, 13), (40, 14), " 2: 'NUMBER',\n")
+NL
+(2, '3', (41, 1), (41, 2), " 3: 'STRING',\n")
+NUMBER
+(51, ':', (41, 2), (41, 3), " 3: 'STRING',\n")
+OP
+(3, "'STRING'", (41, 4), (41, 12), " 3: 'STRING',\n")
+STRING
+(51, ',', (41, 12), (41, 13), " 3: 'STRING',\n")
+OP
+(54, '\n', (41, 13), (41, 14), " 3: 'STRING',\n")
+NL
+(2, '4', (42, 1), (42, 2), " 4: 'NEWLINE',\n")
+NUMBER
+(51, ':', (42, 2), (42, 3), " 4: 'NEWLINE',\n")
+OP
+(3, "'NEWLINE'", (42, 4), (42, 13), " 4: 'NEWLINE',\n")
+STRING
+(51, ',', (42, 13), (42, 14), " 4: 'NEWLINE',\n")
+OP
+(54, '\n', (42, 14), (42, 15), " 4: 'NEWLINE',\n")
+NL
+(2, '5', (43, 1), (43, 2), " 5: 'INDENT',\n")
+NUMBER
+(51, ':', (43, 2), (43, 3), " 5: 'INDENT',\n")
+OP
+(3, "'INDENT'", (43, 4), (43, 12), " 5: 'INDENT',\n")
+STRING
+(51, ',', (43, 12), (43, 13), " 5: 'INDENT',\n")
+OP
+(54, '\n', (43, 13), (43, 14), " 5: 'INDENT',\n")
+NL
+(2, '6', (44, 1), (44, 2), " 6: 'DEDENT',\n")
+NUMBER
+(51, ':', (44, 2), (44, 3), " 6: 'DEDENT',\n")
+OP
+(3, "'DEDENT'", (44, 4), (44, 12), " 6: 'DEDENT',\n")
+STRING
+(51, ',', (44, 12), (44, 13), " 6: 'DEDENT',\n")
+OP
+(54, '\n', (44, 13), (44, 14), " 6: 'DEDENT',\n")
+NL
+(2, '7', (45, 1), (45, 2), " 7: 'LPAR',\n")
+NUMBER
+(51, ':', (45, 2), (45, 3), " 7: 'LPAR',\n")
+OP
+(3, "'LPAR'", (45, 4), (45, 10), " 7: 'LPAR',\n")
+STRING
+(51, ',', (45, 10), (45, 11), " 7: 'LPAR',\n")
+OP
+(54, '\n', (45, 11), (45, 12), " 7: 'LPAR',\n")
+NL
+(2, '8', (46, 1), (46, 2), " 8: 'RPAR',\n")
+NUMBER
+(51, ':', (46, 2), (46, 3), " 8: 'RPAR',\n")
+OP
+(3, "'RPAR'", (46, 4), (46, 10), " 8: 'RPAR',\n")
+STRING
+(51, ',', (46, 10), (46, 11), " 8: 'RPAR',\n")
+OP
+(54, '\n', (46, 11), (46, 12), " 8: 'RPAR',\n")
+NL
+(2, '9', (47, 1), (47, 2), " 9: 'LSQB',\n")
+NUMBER
+(51, ':', (47, 2), (47, 3), " 9: 'LSQB',\n")
+OP
+(3, "'LSQB'", (47, 4), (47, 10), " 9: 'LSQB',\n")
+STRING
+(51, ',', (47, 10), (47, 11), " 9: 'LSQB',\n")
+OP
+(54, '\n', (47, 11), (47, 12), " 9: 'LSQB',\n")
+NL
+(2, '10', (48, 1), (48, 3), " 10: 'RSQB',\n")
+NUMBER
+(51, ':', (48, 3), (48, 4), " 10: 'RSQB',\n")
+OP
+(3, "'RSQB'", (48, 5), (48, 11), " 10: 'RSQB',\n")
+STRING
+(51, ',', (48, 11), (48, 12), " 10: 'RSQB',\n")
+OP
+(54, '\n', (48, 12), (48, 13), " 10: 'RSQB',\n")
+NL
+(2, '11', (49, 1), (49, 3), " 11: 'COLON',\n")
+NUMBER
+(51, ':', (49, 3), (49, 4), " 11: 'COLON',\n")
+OP
+(3, "'COLON'", (49, 5), (49, 12), " 11: 'COLON',\n")
+STRING
+(51, ',', (49, 12), (49, 13), " 11: 'COLON',\n")
+OP
+(54, '\n', (49, 13), (49, 14), " 11: 'COLON',\n")
+NL
+(2, '12', (50, 1), (50, 3), " 12: 'COMMA',\n")
+NUMBER
+(51, ':', (50, 3), (50, 4), " 12: 'COMMA',\n")
+OP
+(3, "'COMMA'", (50, 5), (50, 12), " 12: 'COMMA',\n")
+STRING
+(51, ',', (50, 12), (50, 13), " 12: 'COMMA',\n")
+OP
+(54, '\n', (50, 13), (50, 14), " 12: 'COMMA',\n")
+NL
+(2, '13', (51, 1), (51, 3), " 13: 'SEMI',\n")
+NUMBER
+(51, ':', (51, 3), (51, 4), " 13: 'SEMI',\n")
+OP
+(3, "'SEMI'", (51, 5), (51, 11), " 13: 'SEMI',\n")
+STRING
+(51, ',', (51, 11), (51, 12), " 13: 'SEMI',\n")
+OP
+(54, '\n', (51, 12), (51, 13), " 13: 'SEMI',\n")
+NL
+(2, '14', (52, 1), (52, 3), " 14: 'PLUS',\n")
+NUMBER
+(51, ':', (52, 3), (52, 4), " 14: 'PLUS',\n")
+OP
+(3, "'PLUS'", (52, 5), (52, 11), " 14: 'PLUS',\n")
+STRING
+(51, ',', (52, 11), (52, 12), " 14: 'PLUS',\n")
+OP
+(54, '\n', (52, 12), (52, 13), " 14: 'PLUS',\n")
+NL
+(2, '15', (53, 1), (53, 3), " 15: 'MINUS',\n")
+NUMBER
+(51, ':', (53, 3), (53, 4), " 15: 'MINUS',\n")
+OP
+(3, "'MINUS'", (53, 5), (53, 12), " 15: 'MINUS',\n")
+STRING
+(51, ',', (53, 12), (53, 13), " 15: 'MINUS',\n")
+OP
+(54, '\n', (53, 13), (53, 14), " 15: 'MINUS',\n")
+NL
+(2, '16', (54, 1), (54, 3), " 16: 'STAR',\n")
+NUMBER
+(51, ':', (54, 3), (54, 4), " 16: 'STAR',\n")
+OP
+(3, "'STAR'", (54, 5), (54, 11), " 16: 'STAR',\n")
+STRING
+(51, ',', (54, 11), (54, 12), " 16: 'STAR',\n")
+OP
+(54, '\n', (54, 12), (54, 13), " 16: 'STAR',\n")
+NL
+(2, '17', (55, 1), (55, 3), " 17: 'SLASH',\n")
+NUMBER
+(51, ':', (55, 3), (55, 4), " 17: 'SLASH',\n")
+OP
+(3, "'SLASH'", (55, 5), (55, 12), " 17: 'SLASH',\n")
+STRING
+(51, ',', (55, 12), (55, 13), " 17: 'SLASH',\n")
+OP
+(54, '\n', (55, 13), (55, 14), " 17: 'SLASH',\n")
+NL
+(2, '18', (56, 1), (56, 3), " 18: 'VBAR',\n")
+NUMBER
+(51, ':', (56, 3), (56, 4), " 18: 'VBAR',\n")
+OP
+(3, "'VBAR'", (56, 5), (56, 11), " 18: 'VBAR',\n")
+STRING
+(51, ',', (56, 11), (56, 12), " 18: 'VBAR',\n")
+OP
+(54, '\n', (56, 12), (56, 13), " 18: 'VBAR',\n")
+NL
+(2, '19', (57, 1), (57, 3), " 19: 'AMPER',\n")
+NUMBER
+(51, ':', (57, 3), (57, 4), " 19: 'AMPER',\n")
+OP
+(3, "'AMPER'", (57, 5), (57, 12), " 19: 'AMPER',\n")
+STRING
+(51, ',', (57, 12), (57, 13), " 19: 'AMPER',\n")
+OP
+(54, '\n', (57, 13), (57, 14), " 19: 'AMPER',\n")
+NL
+(2, '20', (58, 1), (58, 3), " 20: 'LESS',\n")
+NUMBER
+(51, ':', (58, 3), (58, 4), " 20: 'LESS',\n")
+OP
+(3, "'LESS'", (58, 5), (58, 11), " 20: 'LESS',\n")
+STRING
+(51, ',', (58, 11), (58, 12), " 20: 'LESS',\n")
+OP
+(54, '\n', (58, 12), (58, 13), " 20: 'LESS',\n")
+NL
+(2, '21', (59, 1), (59, 3), " 21: 'GREATER',\n")
+NUMBER
+(51, ':', (59, 3), (59, 4), " 21: 'GREATER',\n")
+OP
+(3, "'GREATER'", (59, 5), (59, 14), " 21: 'GREATER',\n")
+STRING
+(51, ',', (59, 14), (59, 15), " 21: 'GREATER',\n")
+OP
+(54, '\n', (59, 15), (59, 16), " 21: 'GREATER',\n")
+NL
+(2, '22', (60, 1), (60, 3), " 22: 'EQUAL',\n")
+NUMBER
+(51, ':', (60, 3), (60, 4), " 22: 'EQUAL',\n")
+OP
+(3, "'EQUAL'", (60, 5), (60, 12), " 22: 'EQUAL',\n")
+STRING
+(51, ',', (60, 12), (60, 13), " 22: 'EQUAL',\n")
+OP
+(54, '\n', (60, 13), (60, 14), " 22: 'EQUAL',\n")
+NL
+(2, '23', (61, 1), (61, 3), " 23: 'DOT',\n")
+NUMBER
+(51, ':', (61, 3), (61, 4), " 23: 'DOT',\n")
+OP
+(3, "'DOT'", (61, 5), (61, 10), " 23: 'DOT',\n")
+STRING
+(51, ',', (61, 10), (61, 11), " 23: 'DOT',\n")
+OP
+(54, '\n', (61, 11), (61, 12), " 23: 'DOT',\n")
+NL
+(2, '24', (62, 1), (62, 3), " 24: 'PERCENT',\n")
+NUMBER
+(51, ':', (62, 3), (62, 4), " 24: 'PERCENT',\n")
+OP
+(3, "'PERCENT'", (62, 5), (62, 14), " 24: 'PERCENT',\n")
+STRING
+(51, ',', (62, 14), (62, 15), " 24: 'PERCENT',\n")
+OP
+(54, '\n', (62, 15), (62, 16), " 24: 'PERCENT',\n")
+NL
+(2, '25', (63, 1), (63, 3), " 25: 'BACKQUOTE',\n")
+NUMBER
+(51, ':', (63, 3), (63, 4), " 25: 'BACKQUOTE',\n")
+OP
+(3, "'BACKQUOTE'", (63, 5), (63, 16), " 25: 'BACKQUOTE',\n")
+STRING
+(51, ',', (63, 16), (63, 17), " 25: 'BACKQUOTE',\n")
+OP
+(54, '\n', (63, 17), (63, 18), " 25: 'BACKQUOTE',\n")
+NL
+(2, '26', (64, 1), (64, 3), " 26: 'LBRACE',\n")
+NUMBER
+(51, ':', (64, 3), (64, 4), " 26: 'LBRACE',\n")
+OP
+(3, "'LBRACE'", (64, 5), (64, 13), " 26: 'LBRACE',\n")
+STRING
+(51, ',', (64, 13), (64, 14), " 26: 'LBRACE',\n")
+OP
+(54, '\n', (64, 14), (64, 15), " 26: 'LBRACE',\n")
+NL
+(2, '27', (65, 1), (65, 3), " 27: 'RBRACE',\n")
+NUMBER
+(51, ':', (65, 3), (65, 4), " 27: 'RBRACE',\n")
+OP
+(3, "'RBRACE'", (65, 5), (65, 13), " 27: 'RBRACE',\n")
+STRING
+(51, ',', (65, 13), (65, 14), " 27: 'RBRACE',\n")
+OP
+(54, '\n', (65, 14), (65, 15), " 27: 'RBRACE',\n")
+NL
+(2, '28', (66, 1), (66, 3), " 28: 'EQEQUAL',\n")
+NUMBER
+(51, ':', (66, 3), (66, 4), " 28: 'EQEQUAL',\n")
+OP
+(3, "'EQEQUAL'", (66, 5), (66, 14), " 28: 'EQEQUAL',\n")
+STRING
+(51, ',', (66, 14), (66, 15), " 28: 'EQEQUAL',\n")
+OP
+(54, '\n', (66, 15), (66, 16), " 28: 'EQEQUAL',\n")
+NL
+(2, '29', (67, 1), (67, 3), " 29: 'NOTEQUAL',\n")
+NUMBER
+(51, ':', (67, 3), (67, 4), " 29: 'NOTEQUAL',\n")
+OP
+(3, "'NOTEQUAL'", (67, 5), (67, 15), " 29: 'NOTEQUAL',\n")
+STRING
+(51, ',', (67, 15), (67, 16), " 29: 'NOTEQUAL',\n")
+OP
+(54, '\n', (67, 16), (67, 17), " 29: 'NOTEQUAL',\n")
+NL
+(2, '30', (68, 1), (68, 3), " 30: 'LESSEQUAL',\n")
+NUMBER
+(51, ':', (68, 3), (68, 4), " 30: 'LESSEQUAL',\n")
+OP
+(3, "'LESSEQUAL'", (68, 5), (68, 16), " 30: 'LESSEQUAL',\n")
+STRING
+(51, ',', (68, 16), (68, 17), " 30: 'LESSEQUAL',\n")
+OP
+(54, '\n', (68, 17), (68, 18), " 30: 'LESSEQUAL',\n")
+NL
+(2, '31', (69, 1), (69, 3), " 31: 'GREATEREQUAL',\n")
+NUMBER
+(51, ':', (69, 3), (69, 4), " 31: 'GREATEREQUAL',\n")
+OP
+(3, "'GREATEREQUAL'", (69, 5), (69, 19), " 31: 'GREATEREQUAL',\n")
+STRING
+(51, ',', (69, 19), (69, 20), " 31: 'GREATEREQUAL',\n")
+OP
+(54, '\n', (69, 20), (69, 21), " 31: 'GREATEREQUAL',\n")
+NL
+(2, '32', (70, 1), (70, 3), " 32: 'TILDE',\n")
+NUMBER
+(51, ':', (70, 3), (70, 4), " 32: 'TILDE',\n")
+OP
+(3, "'TILDE'", (70, 5), (70, 12), " 32: 'TILDE',\n")
+STRING
+(51, ',', (70, 12), (70, 13), " 32: 'TILDE',\n")
+OP
+(54, '\n', (70, 13), (70, 14), " 32: 'TILDE',\n")
+NL
+(2, '33', (71, 1), (71, 3), " 33: 'CIRCUMFLEX',\n")
+NUMBER
+(51, ':', (71, 3), (71, 4), " 33: 'CIRCUMFLEX',\n")
+OP
+(3, "'CIRCUMFLEX'", (71, 5), (71, 17), " 33: 'CIRCUMFLEX',\n")
+STRING
+(51, ',', (71, 17), (71, 18), " 33: 'CIRCUMFLEX',\n")
+OP
+(54, '\n', (71, 18), (71, 19), " 33: 'CIRCUMFLEX',\n")
+NL
+(2, '34', (72, 1), (72, 3), " 34: 'LEFTSHIFT',\n")
+NUMBER
+(51, ':', (72, 3), (72, 4), " 34: 'LEFTSHIFT',\n")
+OP
+(3, "'LEFTSHIFT'", (72, 5), (72, 16), " 34: 'LEFTSHIFT',\n")
+STRING
+(51, ',', (72, 16), (72, 17), " 34: 'LEFTSHIFT',\n")
+OP
+(54, '\n', (72, 17), (72, 18), " 34: 'LEFTSHIFT',\n")
+NL
+(2, '35', (73, 1), (73, 3), " 35: 'RIGHTSHIFT',\n")
+NUMBER
+(51, ':', (73, 3), (73, 4), " 35: 'RIGHTSHIFT',\n")
+OP
+(3, "'RIGHTSHIFT'", (73, 5), (73, 17), " 35: 'RIGHTSHIFT',\n")
+STRING
+(51, ',', (73, 17), (73, 18), " 35: 'RIGHTSHIFT',\n")
+OP
+(54, '\n', (73, 18), (73, 19), " 35: 'RIGHTSHIFT',\n")
+NL
+(2, '36', (74, 1), (74, 3), " 36: 'DOUBLESTAR',\n")
+NUMBER
+(51, ':', (74, 3), (74, 4), " 36: 'DOUBLESTAR',\n")
+OP
+(3, "'DOUBLESTAR'", (74, 5), (74, 17), " 36: 'DOUBLESTAR',\n")
+STRING
+(51, ',', (74, 17), (74, 18), " 36: 'DOUBLESTAR',\n")
+OP
+(54, '\n', (74, 18), (74, 19), " 36: 'DOUBLESTAR',\n")
+NL
+(2, '37', (75, 1), (75, 3), " 37: 'PLUSEQUAL',\n")
+NUMBER
+(51, ':', (75, 3), (75, 4), " 37: 'PLUSEQUAL',\n")
+OP
+(3, "'PLUSEQUAL'", (75, 5), (75, 16), " 37: 'PLUSEQUAL',\n")
+STRING
+(51, ',', (75, 16), (75, 17), " 37: 'PLUSEQUAL',\n")
+OP
+(54, '\n', (75, 17), (75, 18), " 37: 'PLUSEQUAL',\n")
+NL
+(2, '38', (76, 1), (76, 3), " 38: 'MINEQUAL',\n")
+NUMBER
+(51, ':', (76, 3), (76, 4), " 38: 'MINEQUAL',\n")
+OP
+(3, "'MINEQUAL'", (76, 5), (76, 15), " 38: 'MINEQUAL',\n")
+STRING
+(51, ',', (76, 15), (76, 16), " 38: 'MINEQUAL',\n")
+OP
+(54, '\n', (76, 16), (76, 17), " 38: 'MINEQUAL',\n")
+NL
+(2, '39', (77, 1), (77, 3), " 39: 'STAREQUAL',\n")
+NUMBER
+(51, ':', (77, 3), (77, 4), " 39: 'STAREQUAL',\n")
+OP
+(3, "'STAREQUAL'", (77, 5), (77, 16), " 39: 'STAREQUAL',\n")
+STRING
+(51, ',', (77, 16), (77, 17), " 39: 'STAREQUAL',\n")
+OP
+(54, '\n', (77, 17), (77, 18), " 39: 'STAREQUAL',\n")
+NL
+(2, '40', (78, 1), (78, 3), " 40: 'SLASHEQUAL',\n")
+NUMBER
+(51, ':', (78, 3), (78, 4), " 40: 'SLASHEQUAL',\n")
+OP
+(3, "'SLASHEQUAL'", (78, 5), (78, 17), " 40: 'SLASHEQUAL',\n")
+STRING
+(51, ',', (78, 17), (78, 18), " 40: 'SLASHEQUAL',\n")
+OP
+(54, '\n', (78, 18), (78, 19), " 40: 'SLASHEQUAL',\n")
+NL
+(2, '41', (79, 1), (79, 3), " 41: 'PERCENTEQUAL',\n")
+NUMBER
+(51, ':', (79, 3), (79, 4), " 41: 'PERCENTEQUAL',\n")
+OP
+(3, "'PERCENTEQUAL'", (79, 5), (79, 19), " 41: 'PERCENTEQUAL',\n")
+STRING
+(51, ',', (79, 19), (79, 20), " 41: 'PERCENTEQUAL',\n")
+OP
+(54, '\n', (79, 20), (79, 21), " 41: 'PERCENTEQUAL',\n")
+NL
+(2, '42', (80, 1), (80, 3), " 42: 'AMPEREQUAL',\n")
+NUMBER
+(51, ':', (80, 3), (80, 4), " 42: 'AMPEREQUAL',\n")
+OP
+(3, "'AMPEREQUAL'", (80, 5), (80, 17), " 42: 'AMPEREQUAL',\n")
+STRING
+(51, ',', (80, 17), (80, 18), " 42: 'AMPEREQUAL',\n")
+OP
+(54, '\n', (80, 18), (80, 19), " 42: 'AMPEREQUAL',\n")
+NL
+(2, '43', (81, 1), (81, 3), " 43: 'VBAREQUAL',\n")
+NUMBER
+(51, ':', (81, 3), (81, 4), " 43: 'VBAREQUAL',\n")
+OP
+(3, "'VBAREQUAL'", (81, 5), (81, 16), " 43: 'VBAREQUAL',\n")
+STRING
+(51, ',', (81, 16), (81, 17), " 43: 'VBAREQUAL',\n")
+OP
+(54, '\n', (81, 17), (81, 18), " 43: 'VBAREQUAL',\n")
+NL
+(2, '44', (82, 1), (82, 3), " 44: 'CIRCUMFLEXEQUAL',\n")
+NUMBER
+(51, ':', (82, 3), (82, 4), " 44: 'CIRCUMFLEXEQUAL',\n")
+OP
+(3, "'CIRCUMFLEXEQUAL'", (82, 5), (82, 22), " 44: 'CIRCUMFLEXEQUAL',\n")
+STRING
+(51, ',', (82, 22), (82, 23), " 44: 'CIRCUMFLEXEQUAL',\n")
+OP
+(54, '\n', (82, 23), (82, 24), " 44: 'CIRCUMFLEXEQUAL',\n")
+NL
+(2, '45', (83, 1), (83, 3), " 45: 'LEFTSHIFTEQUAL',\n")
+NUMBER
+(51, ':', (83, 3), (83, 4), " 45: 'LEFTSHIFTEQUAL',\n")
+OP
+(3, "'LEFTSHIFTEQUAL'", (83, 5), (83, 21), " 45: 'LEFTSHIFTEQUAL',\n")
+STRING
+(51, ',', (83, 21), (83, 22), " 45: 'LEFTSHIFTEQUAL',\n")
+OP
+(54, '\n', (83, 22), (83, 23), " 45: 'LEFTSHIFTEQUAL',\n")
+NL
+(2, '46', (84, 1), (84, 3), " 46: 'RIGHTSHIFTEQUAL',\n")
+NUMBER
+(51, ':', (84, 3), (84, 4), " 46: 'RIGHTSHIFTEQUAL',\n")
+OP
+(3, "'RIGHTSHIFTEQUAL'", (84, 5), (84, 22), " 46: 'RIGHTSHIFTEQUAL',\n")
+STRING
+(51, ',', (84, 22), (84, 23), " 46: 'RIGHTSHIFTEQUAL',\n")
+OP
+(54, '\n', (84, 23), (84, 24), " 46: 'RIGHTSHIFTEQUAL',\n")
+NL
+(2, '47', (85, 1), (85, 3), " 47: 'DOUBLESTAREQUAL',\n")
+NUMBER
+(51, ':', (85, 3), (85, 4), " 47: 'DOUBLESTAREQUAL',\n")
+OP
+(3, "'DOUBLESTAREQUAL'", (85, 5), (85, 22), " 47: 'DOUBLESTAREQUAL',\n")
+STRING
+(51, ',', (85, 22), (85, 23), " 47: 'DOUBLESTAREQUAL',\n")
+OP
+(54, '\n', (85, 23), (85, 24), " 47: 'DOUBLESTAREQUAL',\n")
+NL
+(2, '48', (86, 1), (86, 3), " 48: 'DOUBLESLASH',\n")
+NUMBER
+(51, ':', (86, 3), (86, 4), " 48: 'DOUBLESLASH',\n")
+OP
+(3, "'DOUBLESLASH'", (86, 5), (86, 18), " 48: 'DOUBLESLASH',\n")
+STRING
+(51, ',', (86, 18), (86, 19), " 48: 'DOUBLESLASH',\n")
+OP
+(54, '\n', (86, 19), (86, 20), " 48: 'DOUBLESLASH',\n")
+NL
+(2, '49', (87, 1), (87, 3), " 49: 'DOUBLESLASHEQUAL',\n")
+NUMBER
+(51, ':', (87, 3), (87, 4), " 49: 'DOUBLESLASHEQUAL',\n")
+OP
+(3, "'DOUBLESLASHEQUAL'", (87, 5), (87, 23), " 49: 'DOUBLESLASHEQUAL',\n")
+STRING
+(51, ',', (87, 23), (87, 24), " 49: 'DOUBLESLASHEQUAL',\n")
+OP
+(54, '\n', (87, 24), (87, 25), " 49: 'DOUBLESLASHEQUAL',\n")
+NL
+(2, '50', (88, 1), (88, 3), " 50: 'AT',\n")
+NUMBER
+(51, ':', (88, 3), (88, 4), " 50: 'AT',\n")
+OP
+(3, "'AT'", (88, 5), (88, 9), " 50: 'AT',\n")
+STRING
+(51, ',', (88, 9), (88, 10), " 50: 'AT',\n")
+OP
+(54, '\n', (88, 10), (88, 11), " 50: 'AT',\n")
+NL
+(2, '1', (89, 1), (89, 2), " 1: 'NAME',\n")
+NUMBER
+(51, ':', (89, 2), (89, 3), " 1: 'NAME',\n")
+OP
+(3, "'NAME'", (89, 4), (89, 10), " 1: 'NAME',\n")
+STRING
+(51, ',', (89, 10), (89, 11), " 1: 'NAME',\n")
+OP
+(54, '\n', (89, 11), (89, 12), " 1: 'NAME',\n")
+NL
+(2, '52', (90, 1), (90, 3), " 52: 'ERRORTOKEN',\n")
+NUMBER
+(51, ':', (90, 3), (90, 4), " 52: 'ERRORTOKEN',\n")
+OP
+(3, "'ERRORTOKEN'", (90, 5), (90, 17), " 52: 'ERRORTOKEN',\n")
+STRING
+(51, ',', (90, 17), (90, 18), " 52: 'ERRORTOKEN',\n")
+OP
+(54, '\n', (90, 18), (90, 19), " 52: 'ERRORTOKEN',\n")
+NL
+(2, '53', (91, 1), (91, 3), " 53: 'N_TOKENS',\n")
+NUMBER
+(51, ':', (91, 3), (91, 4), " 53: 'N_TOKENS',\n")
+OP
+(3, "'N_TOKENS'", (91, 5), (91, 15), " 53: 'N_TOKENS',\n")
+STRING
+(51, ',', (91, 15), (91, 16), " 53: 'N_TOKENS',\n")
+OP
+(54, '\n', (91, 16), (91, 17), " 53: 'N_TOKENS',\n")
+NL
+(2, '51', (92, 1), (92, 3), " 51: 'OP'}\n")
+NUMBER
+(51, ':', (92, 3), (92, 4), " 51: 'OP'}\n")
+OP
+(3, "'OP'", (92, 5), (92, 9), " 51: 'OP'}\n")
+STRING
+(51, '}', (92, 9), (92, 10), " 51: 'OP'}\n")
+OP
+(4, '\n', (92, 10), (92, 11), " 51: 'OP'}\n")
+NEWLINE
+(54, '\n', (93, 0), (93, 1), '\n')
+NL
+(1, 'b', (94, 0), (94, 1), 'b=0\n')
+NAME
+(51, '=', (94, 1), (94, 2), 'b=0\n')
+OP
+(2, '0', (94, 2), (94, 3), 'b=0\n')
+NUMBER
+(4, '\n', (94, 3), (94, 4), 'b=0\n')
+NEWLINE
+(1, 'bc', (95, 0), (95, 2), 'bc=0\n')
+NAME
+(51, '=', (95, 2), (95, 3), 'bc=0\n')
+OP
+(2, '0', (95, 3), (95, 4), 'bc=0\n')
+NUMBER
+(4, '\n', (95, 4), (95, 5), 'bc=0\n')
+NEWLINE
+(1, 'bd', (96, 0), (96, 2), 'bd=0\n')
+NAME
+(51, '=', (96, 2), (96, 3), 'bd=0\n')
+OP
+(2, '0', (96, 3), (96, 4), 'bd=0\n')
+NUMBER
+(4, '\n', (96, 4), (96, 5), 'bd=0\n')
+NEWLINE
+(1, 'bpenalty', (97, 0), (97, 8), 'bpenalty=0\n')
+NAME
+(51, '=', (97, 8), (97, 9), 'bpenalty=0\n')
+OP
+(2, '0', (97, 9), (97, 10), 'bpenalty=0\n')
+NUMBER
+(4, '\n', (97, 10), (97, 11), 'bpenalty=0\n')
+NEWLINE
+(1, 'cpenalty', (98, 0), (98, 8), 'cpenalty=0\n')
+NAME
+(51, '=', (98, 8), (98, 9), 'cpenalty=0\n')
+OP
+(2, '0', (98, 9), (98, 10), 'cpenalty=0\n')
+NUMBER
+(4, '\n', (98, 10), (98, 11), 'cpenalty=0\n')
+NEWLINE
+(1, 'tpenalty', (99, 0), (99, 8), 'tpenalty=0\n')
+NAME
+(51, '=', (99, 8), (99, 9), 'tpenalty=0\n')
+OP
+(2, '0', (99, 9), (99, 10), 'tpenalty=0\n')
+NUMBER
+(4, '\n', (99, 10), (99, 11), 'tpenalty=0\n')
+NEWLINE
+(1, 'semis', (100, 0), (100, 5), 'semis = 0\n')
+NAME
+(51, '=', (100, 6), (100, 7), 'semis = 0\n')
+OP
+(2, '0', (100, 8), (100, 9), 'semis = 0\n')
+NUMBER
+(4, '\n', (100, 9), (100, 10), 'semis = 0\n')
+NEWLINE
+(1, 'indents', (101, 0), (101, 7), 'indents = dict()\n')
+NAME
+(51, '=', (101, 8), (101, 9), 'indents = dict()\n')
+OP
+(1, 'dict', (101, 10), (101, 14), 'indents = dict()\n')
+NAME
+(51, '(', (101, 14), (101, 15), 'indents = dict()\n')
+OP
+(51, ')', (101, 15), (101, 16), 'indents = dict()\n')
+OP
+(4, '\n', (101, 16), (101, 17), 'indents = dict()\n')
+NEWLINE
+(1, 'def', (102, 0), (102, 3), 'def analyze(f):\n')
+NAME
+(1, 'analyze', (102, 4), (102, 11), 'def analyze(f):\n')
+NAME
+(51, '(', (102, 11), (102, 12), 'def analyze(f):\n')
+OP
+(1, 'f', (102, 12), (102, 13), 'def analyze(f):\n')
+NAME
+(51, ')', (102, 13), (102, 14), 'def analyze(f):\n')
+OP
+(51, ':', (102, 14), (102, 15), 'def analyze(f):\n')
+OP
+(4, '\n', (102, 15), (102, 16), 'def analyze(f):\n')
+NEWLINE
+(5, '    ', (103, 0), (103, 4), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+INDENT
+(1, 'global', (103, 4), (103, 10), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(1, 'b', (103, 11), (103, 12), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(51, ',', (103, 12), (103, 13), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+OP
+(1, 'bc', (103, 13), (103, 15), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(51, ',', (103, 15), (103, 16), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+OP
+(1, 'bd', (103, 16), (103, 18), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(51, ',', (103, 18), (103, 19), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+OP
+(1, 'bpenalty', (103, 19), (103, 27), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(51, ',', (103, 27), (103, 28), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+OP
+(1, 'cpenalty', (103, 28), (103, 36), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(51, ',', (103, 36), (103, 37), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+OP
+(1, 'tpenalty', (103, 37), (103, 45), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(51, ',', (103, 45), (103, 46), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+OP
+(1, 'semis', (103, 46), (103, 51), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NAME
+(4, '\n', (103, 51), (103, 52), '    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis\n')
+NEWLINE
+(1, 'indspaces', (104, 4), (104, 13), '    indspaces = 0\n')
+NAME
+(51, '=', (104, 14), (104, 15), '    indspaces = 0\n')
+OP
+(2, '0', (104, 16), (104, 17), '    indspaces = 0\n')
+NUMBER
+(4, '\n', (104, 17), (104, 18), '    indspaces = 0\n')
+NEWLINE
+(1, 'curindent', (105, 4), (105, 13), '    curindent = -1\n')
+NAME
+(51, '=', (105, 14), (105, 15), '    curindent = -1\n')
+OP
+(51, '-', (105, 16), (105, 17), '    curindent = -1\n')
+OP
+(2, '1', (105, 17), (105, 18), '    curindent = -1\n')
+NUMBER
+(4, '\n', (105, 18), (105, 19), '    curindent = -1\n')
+NEWLINE
+(1, 'for', (106, 4), (106, 7), '    for t in tokenize.generate_tokens(f.readline):\n')
+NAME
+(1, 't', (106, 8), (106, 9), '    for t in tokenize.generate_tokens(f.readline):\n')
+NAME
+(1, 'in', (106, 10), (106, 12), '    for t in tokenize.generate_tokens(f.readline):\n')
+NAME
+(1, 'tokenize', (106, 13), (106, 21), '    for t in tokenize.generate_tokens(f.readline):\n')
+NAME
+(51, '.', (106, 21), (106, 22), '    for t in tokenize.generate_tokens(f.readline):\n')
+OP
+(1, 'generate_tokens', (106, 22), (106, 37), '    for t in tokenize.generate_tokens(f.readline):\n')
+NAME
+(51, '(', (106, 37), (106, 38), '    for t in tokenize.generate_tokens(f.readline):\n')
+OP
+(1, 'f', (106, 38), (106, 39), '    for t in tokenize.generate_tokens(f.readline):\n')
+NAME
+(51, '.', (106, 39), (106, 40), '    for t in tokenize.generate_tokens(f.readline):\n')
+OP
+(1, 'readline', (106, 40), (106, 48), '    for t in tokenize.generate_tokens(f.readline):\n')
+NAME
+(51, ')', (106, 48), (106, 49), '    for t in tokenize.generate_tokens(f.readline):\n')
+OP
+(51, ':', (106, 49), (106, 50), '    for t in tokenize.generate_tokens(f.readline):\n')
+OP
+(4, '\n', (106, 50), (106, 51), '    for t in tokenize.generate_tokens(f.readline):\n')
+NEWLINE
+(5, '        ', (107, 0), (107, 8), '        print(t)\n')
+INDENT
+(1, 'print', (107, 8), (107, 13), '        print(t)\n')
+NAME
+(51, '(', (107, 13), (107, 14), '        print(t)\n')
+OP
+(1, 't', (107, 14), (107, 15), '        print(t)\n')
+NAME
+(51, ')', (107, 15), (107, 16), '        print(t)\n')
+OP
+(4, '\n', (107, 16), (107, 17), '        print(t)\n')
+NEWLINE
+(1, 'tok_type', (108, 8), (108, 16), '        tok_type = tok_name[t[0]]\n')
+NAME
+(51, '=', (108, 17), (108, 18), '        tok_type = tok_name[t[0]]\n')
+OP
+(1, 'tok_name', (108, 19), (108, 27), '        tok_type = tok_name[t[0]]\n')
+NAME
+(51, '[', (108, 27), (108, 28), '        tok_type = tok_name[t[0]]\n')
+OP
+(1, 't', (108, 28), (108, 29), '        tok_type = tok_name[t[0]]\n')
+NAME
+(51, '[', (108, 29), (108, 30), '        tok_type = tok_name[t[0]]\n')
+OP
+(2, '0', (108, 30), (108, 31), '        tok_type = tok_name[t[0]]\n')
+NUMBER
+(51, ']', (108, 31), (108, 32), '        tok_type = tok_name[t[0]]\n')
+OP
+(51, ']', (108, 32), (108, 33), '        tok_type = tok_name[t[0]]\n')
+OP
+(4, '\n', (108, 33), (108, 34), '        tok_type = tok_name[t[0]]\n')
+NEWLINE
+(1, 'print', (109, 8), (109, 13), '        print(tok_type)\n')
+NAME
+(51, '(', (109, 13), (109, 14), '        print(tok_type)\n')
+OP
+(1, 'tok_type', (109, 14), (109, 22), '        print(tok_type)\n')
+NAME
+(51, ')', (109, 22), (109, 23), '        print(tok_type)\n')
+OP
+(4, '\n', (109, 23), (109, 24), '        print(tok_type)\n')
+NEWLINE
+(1, 'if', (110, 8), (110, 10), "        if (tok_type == 'NAME'):\n")
+NAME
+(51, '(', (110, 11), (110, 12), "        if (tok_type == 'NAME'):\n")
+OP
+(1, 'tok_type', (110, 12), (110, 20), "        if (tok_type == 'NAME'):\n")
+NAME
+(51, '==', (110, 21), (110, 23), "        if (tok_type == 'NAME'):\n")
+OP
+(3, "'NAME'", (110, 24), (110, 30), "        if (tok_type == 'NAME'):\n")
+STRING
+(51, ')', (110, 30), (110, 31), "        if (tok_type == 'NAME'):\n")
+OP
+(51, ':', (110, 31), (110, 32), "        if (tok_type == 'NAME'):\n")
+OP
+(4, '\n', (110, 32), (110, 33), "        if (tok_type == 'NAME'):\n")
+NEWLINE
+(5, '            ', (111, 0), (111, 12), '            if t[1] not in reserved:\n')
+INDENT
+(1, 'if', (111, 12), (111, 14), '            if t[1] not in reserved:\n')
+NAME
+(1, 't', (111, 15), (111, 16), '            if t[1] not in reserved:\n')
+NAME
+(51, '[', (111, 16), (111, 17), '            if t[1] not in reserved:\n')
+OP
+(2, '1', (111, 17), (111, 18), '            if t[1] not in reserved:\n')
+NUMBER
+(51, ']', (111, 18), (111, 19), '            if t[1] not in reserved:\n')
+OP
+(1, 'not', (111, 20), (111, 23), '            if t[1] not in reserved:\n')
+NAME
+(1, 'in', (111, 24), (111, 26), '            if t[1] not in reserved:\n')
+NAME
+(1, 'reserved', (111, 27), (111, 35), '            if t[1] not in reserved:\n')
+NAME
+(51, ':', (111, 35), (111, 36), '            if t[1] not in reserved:\n')
+OP
+(4, '\n', (111, 36), (111, 37), '            if t[1] not in reserved:\n')
+NEWLINE
+(5, '                ', (112, 0), (112, 16), '                names.add(t[1])\n')
+INDENT
+(1, 'names', (112, 16), (112, 21), '                names.add(t[1])\n')
+NAME
+(51, '.', (112, 21), (112, 22), '                names.add(t[1])\n')
+OP
+(1, 'add', (112, 22), (112, 25), '                names.add(t[1])\n')
+NAME
+(51, '(', (112, 25), (112, 26), '                names.add(t[1])\n')
+OP
+(1, 't', (112, 26), (112, 27), '                names.add(t[1])\n')
+NAME
+(51, '[', (112, 27), (112, 28), '                names.add(t[1])\n')
+OP
+(2, '1', (112, 28), (112, 29), '                names.add(t[1])\n')
+NUMBER
+(51, ']', (112, 29), (112, 30), '                names.add(t[1])\n')
+OP
+(51, ')', (112, 30), (112, 31), '                names.add(t[1])\n')
+OP
+(4, '\n', (112, 31), (112, 32), '                names.add(t[1])\n')
+NEWLINE
+(6, '', (113, 12), (113, 12), '            elif t[1]=="if" or t[1]=="elif":\n')
+DEDENT
+(1, 'elif', (113, 12), (113, 16), '            elif t[1]=="if" or t[1]=="elif":\n')
+NAME
+(1, 't', (113, 17), (113, 18), '            elif t[1]=="if" or t[1]=="elif":\n')
+NAME
+(51, '[', (113, 18), (113, 19), '            elif t[1]=="if" or t[1]=="elif":\n')
+OP
+(2, '1', (113, 19), (113, 20), '            elif t[1]=="if" or t[1]=="elif":\n')
+NUMBER
+(51, ']', (113, 20), (113, 21), '            elif t[1]=="if" or t[1]=="elif":\n')
+OP
+(51, '==', (113, 21), (113, 23), '            elif t[1]=="if" or t[1]=="elif":\n')
+OP
+(3, '"if"', (113, 23), (113, 27), '            elif t[1]=="if" or t[1]=="elif":\n')
+STRING
+(1, 'or', (113, 28), (113, 30), '            elif t[1]=="if" or t[1]=="elif":\n')
+NAME
+(1, 't', (113, 31), (113, 32), '            elif t[1]=="if" or t[1]=="elif":\n')
+NAME
+(51, '[', (113, 32), (113, 33), '            elif t[1]=="if" or t[1]=="elif":\n')
+OP
+(2, '1', (113, 33), (113, 34), '            elif t[1]=="if" or t[1]=="elif":\n')
+NUMBER
+(51, ']', (113, 34), (113, 35), '            elif t[1]=="if" or t[1]=="elif":\n')
+OP
+(51, '==', (113, 35), (113, 37), '            elif t[1]=="if" or t[1]=="elif":\n')
+OP
+(3, '"elif"', (113, 37), (113, 43), '            elif t[1]=="if" or t[1]=="elif":\n')
+STRING
+(51, ':', (113, 43), (113, 44), '            elif t[1]=="if" or t[1]=="elif":\n')
+OP
+(4, '\n', (113, 44), (113, 45), '            elif t[1]=="if" or t[1]=="elif":\n')
+NEWLINE
+(5, '                ', (114, 0), (114, 16), '                b=1\n')
+INDENT
+(1, 'b', (114, 16), (114, 17), '                b=1\n')
+NAME
+(51, '=', (114, 17), (114, 18), '                b=1\n')
+OP
+(2, '1', (114, 18), (114, 19), '                b=1\n')
+NUMBER
+(4, '\n', (114, 19), (114, 20), '                b=1\n')
+NEWLINE
+(6, '', (115, 12), (115, 12), "            if t[1]=='try':\n")
+DEDENT
+(1, 'if', (115, 12), (115, 14), "            if t[1]=='try':\n")
+NAME
+(1, 't', (115, 15), (115, 16), "            if t[1]=='try':\n")
+NAME
+(51, '[', (115, 16), (115, 17), "            if t[1]=='try':\n")
+OP
+(2, '1', (115, 17), (115, 18), "            if t[1]=='try':\n")
+NUMBER
+(51, ']', (115, 18), (115, 19), "            if t[1]=='try':\n")
+OP
+(51, '==', (115, 19), (115, 21), "            if t[1]=='try':\n")
+OP
+(3, "'try'", (115, 21), (115, 26), "            if t[1]=='try':\n")
+STRING
+(51, ':', (115, 26), (115, 27), "            if t[1]=='try':\n")
+OP
+(4, '\n', (115, 27), (115, 28), "            if t[1]=='try':\n")
+NEWLINE
+(5, '                ', (116, 0), (116, 16), '                tpenalty += 10\n')
+INDENT
+(1, 'tpenalty', (116, 16), (116, 24), '                tpenalty += 10\n')
+NAME
+(51, '+=', (116, 25), (116, 27), '                tpenalty += 10\n')
+OP
+(2, '10', (116, 28), (116, 30), '                tpenalty += 10\n')
+NUMBER
+(4, '\n', (116, 30), (116, 31), '                tpenalty += 10\n')
+NEWLINE
+(6, '', (117, 8), (117, 8), "        elif tok_type == 'OP':\n")
+DEDENT
+(6, '', (117, 8), (117, 8), "        elif tok_type == 'OP':\n")
+DEDENT
+(1, 'elif', (117, 8), (117, 12), "        elif tok_type == 'OP':\n")
+NAME
+(1, 'tok_type', (117, 13), (117, 21), "        elif tok_type == 'OP':\n")
+NAME
+(51, '==', (117, 22), (117, 24), "        elif tok_type == 'OP':\n")
+OP
+(3, "'OP'", (117, 25), (117, 29), "        elif tok_type == 'OP':\n")
+STRING
+(51, ':', (117, 29), (117, 30), "        elif tok_type == 'OP':\n")
+OP
+(4, '\n', (117, 30), (117, 31), "        elif tok_type == 'OP':\n")
+NEWLINE
+(5, '            ', (118, 0), (118, 12), "            if t[1] == ';':\n")
+INDENT
+(1, 'if', (118, 12), (118, 14), "            if t[1] == ';':\n")
+NAME
+(1, 't', (118, 15), (118, 16), "            if t[1] == ';':\n")
+NAME
+(51, '[', (118, 16), (118, 17), "            if t[1] == ';':\n")
+OP
+(2, '1', (118, 17), (118, 18), "            if t[1] == ';':\n")
+NUMBER
+(51, ']', (118, 18), (118, 19), "            if t[1] == ';':\n")
+OP
+(51, '==', (118, 20), (118, 22), "            if t[1] == ';':\n")
+OP
+(3, "';'", (118, 23), (118, 26), "            if t[1] == ';':\n")
+STRING
+(51, ':', (118, 26), (118, 27), "            if t[1] == ';':\n")
+OP
+(4, '\n', (118, 27), (118, 28), "            if t[1] == ';':\n")
+NEWLINE
+(5, '                ', (119, 0), (119, 16), '                semis += 1\n')
+INDENT
+(1, 'semis', (119, 16), (119, 21), '                semis += 1\n')
+NAME
+(51, '+=', (119, 22), (119, 24), '                semis += 1\n')
+OP
+(2, '1', (119, 25), (119, 26), '                semis += 1\n')
+NUMBER
+(4, '\n', (119, 26), (119, 27), '                semis += 1\n')
+NEWLINE
+(6, '', (120, 8), (120, 8), "        elif tok_type == 'INDENT':\n")
+DEDENT
+(6, '', (120, 8), (120, 8), "        elif tok_type == 'INDENT':\n")
+DEDENT
+(1, 'elif', (120, 8), (120, 12), "        elif tok_type == 'INDENT':\n")
+NAME
+(1, 'tok_type', (120, 13), (120, 21), "        elif tok_type == 'INDENT':\n")
+NAME
+(51, '==', (120, 22), (120, 24), "        elif tok_type == 'INDENT':\n")
+OP
+(3, "'INDENT'", (120, 25), (120, 33), "        elif tok_type == 'INDENT':\n")
+STRING
+(51, ':', (120, 33), (120, 34), "        elif tok_type == 'INDENT':\n")
+OP
+(4, '\n', (120, 34), (120, 35), "        elif tok_type == 'INDENT':\n")
+NEWLINE
+(5, '            ', (121, 0), (121, 12), '            if curindent != len(t[1]):\n')
+INDENT
+(1, 'if', (121, 12), (121, 14), '            if curindent != len(t[1]):\n')
+NAME
+(1, 'curindent', (121, 15), (121, 24), '            if curindent != len(t[1]):\n')
+NAME
+(51, '!=', (121, 25), (121, 27), '            if curindent != len(t[1]):\n')
+OP
+(1, 'len', (121, 28), (121, 31), '            if curindent != len(t[1]):\n')
+NAME
+(51, '(', (121, 31), (121, 32), '            if curindent != len(t[1]):\n')
+OP
+(1, 't', (121, 32), (121, 33), '            if curindent != len(t[1]):\n')
+NAME
+(51, '[', (121, 33), (121, 34), '            if curindent != len(t[1]):\n')
+OP
+(2, '1', (121, 34), (121, 35), '            if curindent != len(t[1]):\n')
+NUMBER
+(51, ']', (121, 35), (121, 36), '            if curindent != len(t[1]):\n')
+OP
+(51, ')', (121, 36), (121, 37), '            if curindent != len(t[1]):\n')
+OP
+(51, ':', (121, 37), (121, 38), '            if curindent != len(t[1]):\n')
+OP
+(4, '\n', (121, 38), (121, 39), '            if curindent != len(t[1]):\n')
+NEWLINE
+(5, '                ', (122, 0), (122, 16), '                if len(t[1]) not in indents:\n')
+INDENT
+(1, 'if', (122, 16), (122, 18), '                if len(t[1]) not in indents:\n')
+NAME
+(1, 'len', (122, 19), (122, 22), '                if len(t[1]) not in indents:\n')
+NAME
+(51, '(', (122, 22), (122, 23), '                if len(t[1]) not in indents:\n')
+OP
+(1, 't', (122, 23), (122, 24), '                if len(t[1]) not in indents:\n')
+NAME
+(51, '[', (122, 24), (122, 25), '                if len(t[1]) not in indents:\n')
+OP
+(2, '1', (122, 25), (122, 26), '                if len(t[1]) not in indents:\n')
+NUMBER
+(51, ']', (122, 26), (122, 27), '                if len(t[1]) not in indents:\n')
+OP
+(51, ')', (122, 27), (122, 28), '                if len(t[1]) not in indents:\n')
+OP
+(1, 'not', (122, 29), (122, 32), '                if len(t[1]) not in indents:\n')
+NAME
+(1, 'in', (122, 33), (122, 35), '                if len(t[1]) not in indents:\n')
+NAME
+(1, 'indents', (122, 36), (122, 43), '                if len(t[1]) not in indents:\n')
+NAME
+(51, ':', (122, 43), (122, 44), '                if len(t[1]) not in indents:\n')
+OP
+(4, '\n', (122, 44), (122, 45), '                if len(t[1]) not in indents:\n')
+NEWLINE
+(5, '                    ', (123, 0), (123, 20), '                    indents[len(t[1])] = 1\n')
+INDENT
+(1, 'indents', (123, 20), (123, 27), '                    indents[len(t[1])] = 1\n')
+NAME
+(51, '[', (123, 27), (123, 28), '                    indents[len(t[1])] = 1\n')
+OP
+(1, 'len', (123, 28), (123, 31), '                    indents[len(t[1])] = 1\n')
+NAME
+(51, '(', (123, 31), (123, 32), '                    indents[len(t[1])] = 1\n')
+OP
+(1, 't', (123, 32), (123, 33), '                    indents[len(t[1])] = 1\n')
+NAME
+(51, '[', (123, 33), (123, 34), '                    indents[len(t[1])] = 1\n')
+OP
+(2, '1', (123, 34), (123, 35), '                    indents[len(t[1])] = 1\n')
+NUMBER
+(51, ']', (123, 35), (123, 36), '                    indents[len(t[1])] = 1\n')
+OP
+(51, ')', (123, 36), (123, 37), '                    indents[len(t[1])] = 1\n')
+OP
+(51, ']', (123, 37), (123, 38), '                    indents[len(t[1])] = 1\n')
+OP
+(51, '=', (123, 39), (123, 40), '                    indents[len(t[1])] = 1\n')
+OP
+(2, '1', (123, 41), (123, 42), '                    indents[len(t[1])] = 1\n')
+NUMBER
+(4, '\n', (123, 42), (123, 43), '                    indents[len(t[1])] = 1\n')
+NEWLINE
+(6, '', (124, 16), (124, 16), '                else:\n')
+DEDENT
+(1, 'else', (124, 16), (124, 20), '                else:\n')
+NAME
+(51, ':', (124, 20), (124, 21), '                else:\n')
+OP
+(4, '\n', (124, 21), (124, 22), '                else:\n')
+NEWLINE
+(5, '                    ', (125, 0), (125, 20), '                    indents[len(t[1])] += 1\n')
+INDENT
+(1, 'indents', (125, 20), (125, 27), '                    indents[len(t[1])] += 1\n')
+NAME
+(51, '[', (125, 27), (125, 28), '                    indents[len(t[1])] += 1\n')
+OP
+(1, 'len', (125, 28), (125, 31), '                    indents[len(t[1])] += 1\n')
+NAME
+(51, '(', (125, 31), (125, 32), '                    indents[len(t[1])] += 1\n')
+OP
+(1, 't', (125, 32), (125, 33), '                    indents[len(t[1])] += 1\n')
+NAME
+(51, '[', (125, 33), (125, 34), '                    indents[len(t[1])] += 1\n')
+OP
+(2, '1', (125, 34), (125, 35), '                    indents[len(t[1])] += 1\n')
+NUMBER
+(51, ']', (125, 35), (125, 36), '                    indents[len(t[1])] += 1\n')
+OP
+(51, ')', (125, 36), (125, 37), '                    indents[len(t[1])] += 1\n')
+OP
+(51, ']', (125, 37), (125, 38), '                    indents[len(t[1])] += 1\n')
+OP
+(51, '+=', (125, 39), (125, 41), '                    indents[len(t[1])] += 1\n')
+OP
+(2, '1', (125, 42), (125, 43), '                    indents[len(t[1])] += 1\n')
+NUMBER
+(4, '\n', (125, 43), (125, 44), '                    indents[len(t[1])] += 1\n')
+NEWLINE
+(6, '', (126, 16), (126, 16), '                curindent = len(t[1])\n')
+DEDENT
+(1, 'curindent', (126, 16), (126, 25), '                curindent = len(t[1])\n')
+NAME
+(51, '=', (126, 26), (126, 27), '                curindent = len(t[1])\n')
+OP
+(1, 'len', (126, 28), (126, 31), '                curindent = len(t[1])\n')
+NAME
+(51, '(', (126, 31), (126, 32), '                curindent = len(t[1])\n')
+OP
+(1, 't', (126, 32), (126, 33), '                curindent = len(t[1])\n')
+NAME
+(51, '[', (126, 33), (126, 34), '                curindent = len(t[1])\n')
+OP
+(2, '1', (126, 34), (126, 35), '                curindent = len(t[1])\n')
+NUMBER
+(51, ']', (126, 35), (126, 36), '                curindent = len(t[1])\n')
+OP
+(51, ')', (126, 36), (126, 37), '                curindent = len(t[1])\n')
+OP
+(4, '\n', (126, 37), (126, 38), '                curindent = len(t[1])\n')
+NEWLINE
+(6, '', (127, 8), (127, 8), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+DEDENT
+(6, '', (127, 8), (127, 8), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+DEDENT
+(1, 'elif', (127, 8), (127, 12), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NAME
+(1, 'tok_type', (127, 13), (127, 21), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NAME
+(51, '==', (127, 22), (127, 24), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+OP
+(3, "'COMMENT'", (127, 25), (127, 34), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+STRING
+(1, 'or', (127, 35), (127, 37), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NAME
+(51, '(', (127, 38), (127, 39), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+OP
+(1, 'tok_type', (127, 39), (127, 47), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NAME
+(51, '==', (127, 48), (127, 50), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+OP
+(3, "'STRING'", (127, 51), (127, 59), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+STRING
+(1, 'and', (127, 60), (127, 63), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NAME
+(3, '"\\"\\"\\""', (127, 64), (127, 72), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+STRING
+(1, 'in', (127, 73), (127, 75), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NAME
+(1, 't', (127, 76), (127, 77), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NAME
+(51, '[', (127, 77), (127, 78), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+OP
+(2, '1', (127, 78), (127, 79), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NUMBER
+(51, ']', (127, 79), (127, 80), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+OP
+(51, ')', (127, 80), (127, 81), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+OP
+(51, ':', (127, 81), (127, 82), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+OP
+(4, '\n', (127, 82), (127, 83), '        elif tok_type == \'COMMENT\' or (tok_type == \'STRING\' and "\\"\\"\\"" in t[1]):\n')
+NEWLINE
+(53, '#print(t)', (128, 12), (128, 21), '            #print(t)\n')
+COMMENT
+(54, '\n', (128, 21), (128, 22), '            #print(t)\n')
+NL
+(5, '            ', (129, 0), (129, 12), '            """\n')
+INDENT
+(3, '"""\n                STUFF\n            """', (129, 12), (131, 15), '            """\n                STUFF\n            """\n')
+STRING
+(4, '\n', (131, 15), (131, 16), '            """\n')
+NEWLINE
+(1, 'cpenalty', (132, 12), (132, 20), '            cpenalty+=10;\n')
+NAME
+(51, '+=', (132, 20), (132, 22), '            cpenalty+=10;\n')
+OP
+(2, '10', (132, 22), (132, 24), '            cpenalty+=10;\n')
+NUMBER
+(51, ';', (132, 24), (132, 25), '            cpenalty+=10;\n')
+OP
+(4, '\n', (132, 25), (132, 26), '            cpenalty+=10;\n')
+NEWLINE
+(6, '', (133, 8), (133, 8), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+DEDENT
+(1, 'if', (133, 8), (133, 10), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(1, 'b', (133, 11), (133, 12), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(1, 'and', (133, 13), (133, 16), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(51, '(', (133, 17), (133, 18), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(1, 't', (133, 18), (133, 19), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(51, '[', (133, 19), (133, 20), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(2, '1', (133, 20), (133, 21), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NUMBER
+(51, ']', (133, 21), (133, 22), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(51, '==', (133, 22), (133, 24), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(3, '"=="', (133, 24), (133, 28), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+STRING
+(1, 'or', (133, 29), (133, 31), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(1, 't', (133, 32), (133, 33), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(51, '[', (133, 33), (133, 34), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(2, '1', (133, 34), (133, 35), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NUMBER
+(51, ']', (133, 35), (133, 36), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(51, '==', (133, 36), (133, 38), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(3, '">"', (133, 38), (133, 41), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+STRING
+(1, 'or', (133, 42), (133, 44), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(1, 't', (133, 45), (133, 46), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(51, '[', (133, 46), (133, 47), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(2, '1', (133, 47), (133, 48), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NUMBER
+(51, ']', (133, 48), (133, 49), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(51, '==', (133, 49), (133, 51), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(3, '">="', (133, 51), (133, 55), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+STRING
+(1, 'or', (133, 56), (133, 58), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(1, 't', (133, 59), (133, 60), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(51, '[', (133, 60), (133, 61), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(2, '1', (133, 61), (133, 62), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NUMBER
+(51, ']', (133, 62), (133, 63), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(51, '==', (133, 63), (133, 65), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(3, '"<="', (133, 65), (133, 69), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+STRING
+(1, 'or', (133, 70), (133, 72), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(1, 't', (133, 73), (133, 74), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(51, '[', (133, 74), (133, 75), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(2, '1', (133, 75), (133, 76), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NUMBER
+(51, ']', (133, 76), (133, 77), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(51, '==', (133, 77), (133, 79), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(3, '"<"', (133, 79), (133, 82), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+STRING
+(1, 'or', (133, 83), (133, 85), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(1, 't', (133, 86), (133, 87), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NAME
+(51, '[', (133, 87), (133, 88), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(2, '1', (133, 88), (133, 89), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NUMBER
+(51, ']', (133, 89), (133, 90), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(51, '==', (133, 90), (133, 92), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(3, '"!="', (133, 92), (133, 96), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+STRING
+(51, ')', (133, 96), (133, 97), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(51, ':', (133, 97), (133, 98), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+OP
+(4, '\n', (133, 98), (133, 99), '        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):\n')
+NEWLINE
+(5, '            ', (134, 0), (134, 12), '            bc+=1\n')
+INDENT
+(1, 'bc', (134, 12), (134, 14), '            bc+=1\n')
+NAME
+(51, '+=', (134, 14), (134, 16), '            bc+=1\n')
+OP
+(2, '1', (134, 16), (134, 17), '            bc+=1\n')
+NUMBER
+(4, '\n', (134, 17), (134, 18), '            bc+=1\n')
+NEWLINE
+(6, '', (135, 8), (135, 8), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+DEDENT
+(1, 'elif', (135, 8), (135, 12), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NAME
+(1, 'b', (135, 13), (135, 14), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NAME
+(1, 'and', (135, 15), (135, 18), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NAME
+(51, '(', (135, 19), (135, 20), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(1, 't', (135, 20), (135, 21), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NAME
+(51, '[', (135, 21), (135, 22), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(2, '1', (135, 22), (135, 23), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NUMBER
+(51, ']', (135, 23), (135, 24), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(51, '==', (135, 24), (135, 26), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(3, '"True"', (135, 26), (135, 32), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+STRING
+(1, 'or', (135, 33), (135, 35), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NAME
+(1, 't', (135, 36), (135, 37), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NAME
+(51, '[', (135, 37), (135, 38), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(2, '1', (135, 38), (135, 39), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NUMBER
+(51, ']', (135, 39), (135, 40), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(51, '==', (135, 40), (135, 42), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(3, '"False"', (135, 42), (135, 49), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+STRING
+(51, ')', (135, 49), (135, 50), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(51, ':', (135, 50), (135, 51), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+OP
+(4, '\n', (135, 51), (135, 52), '        elif b and (t[1]=="True" or t[1]=="False"):\n')
+NEWLINE
+(5, '            ', (136, 0), (136, 12), '            bd+=1\n')
+INDENT
+(1, 'bd', (136, 12), (136, 14), '            bd+=1\n')
+NAME
+(51, '+=', (136, 14), (136, 16), '            bd+=1\n')
+OP
+(2, '1', (136, 16), (136, 17), '            bd+=1\n')
+NUMBER
+(4, '\n', (136, 17), (136, 18), '            bd+=1\n')
+NEWLINE
+(6, '', (137, 8), (137, 8), "        elif b and t[1]==':':\n")
+DEDENT
+(1, 'elif', (137, 8), (137, 12), "        elif b and t[1]==':':\n")
+NAME
+(1, 'b', (137, 13), (137, 14), "        elif b and t[1]==':':\n")
+NAME
+(1, 'and', (137, 15), (137, 18), "        elif b and t[1]==':':\n")
+NAME
+(1, 't', (137, 19), (137, 20), "        elif b and t[1]==':':\n")
+NAME
+(51, '[', (137, 20), (137, 21), "        elif b and t[1]==':':\n")
+OP
+(2, '1', (137, 21), (137, 22), "        elif b and t[1]==':':\n")
+NUMBER
+(51, ']', (137, 22), (137, 23), "        elif b and t[1]==':':\n")
+OP
+(51, '==', (137, 23), (137, 25), "        elif b and t[1]==':':\n")
+OP
+(3, "':'", (137, 25), (137, 28), "        elif b and t[1]==':':\n")
+STRING
+(51, ':', (137, 28), (137, 29), "        elif b and t[1]==':':\n")
+OP
+(4, '\n', (137, 29), (137, 30), "        elif b and t[1]==':':\n")
+NEWLINE
+(5, '            ', (138, 0), (138, 12), '            if bc <=5:\n')
+INDENT
+(1, 'if', (138, 12), (138, 14), '            if bc <=5:\n')
+NAME
+(1, 'bc', (138, 15), (138, 17), '            if bc <=5:\n')
+NAME
+(51, '<=', (138, 18), (138, 20), '            if bc <=5:\n')
+OP
+(2, '5', (138, 20), (138, 21), '            if bc <=5:\n')
+NUMBER
+(51, ':', (138, 21), (138, 22), '            if bc <=5:\n')
+OP
+(4, '\n', (138, 22), (138, 23), '            if bc <=5:\n')
+NEWLINE
+(5, '               ', (139, 0), (139, 15), '               bpenalty+=10\n')
+INDENT
+(1, 'bpenalty', (139, 15), (139, 23), '               bpenalty+=10\n')
+NAME
+(51, '+=', (139, 23), (139, 25), '               bpenalty+=10\n')
+OP
+(2, '10', (139, 25), (139, 27), '               bpenalty+=10\n')
+NUMBER
+(4, '\n', (139, 27), (139, 28), '               bpenalty+=10\n')
+NEWLINE
+(6, '', (140, 12), (140, 12), '            bpenalty-=bd*10\n')
+DEDENT
+(1, 'bpenalty', (140, 12), (140, 20), '            bpenalty-=bd*10\n')
+NAME
+(51, '-=', (140, 20), (140, 22), '            bpenalty-=bd*10\n')
+OP
+(1, 'bd', (140, 22), (140, 24), '            bpenalty-=bd*10\n')
+NAME
+(51, '*', (140, 24), (140, 25), '            bpenalty-=bd*10\n')
+OP
+(2, '10', (140, 25), (140, 27), '            bpenalty-=bd*10\n')
+NUMBER
+(4, '\n', (140, 27), (140, 28), '            bpenalty-=bd*10\n')
+NEWLINE
+(1, 'bd', (141, 12), (141, 14), '            bd=0   \n')
+NAME
+(51, '=', (141, 14), (141, 15), '            bd=0   \n')
+OP
+(2, '0', (141, 15), (141, 16), '            bd=0   \n')
+NUMBER
+(4, '\n', (141, 19), (141, 20), '            bd=0   \n')
+NEWLINE
+(1, 'bc', (142, 12), (142, 14), '            bc=0\n')
+NAME
+(51, '=', (142, 14), (142, 15), '            bc=0\n')
+OP
+(2, '0', (142, 15), (142, 16), '            bc=0\n')
+NUMBER
+(4, '\n', (142, 16), (142, 17), '            bc=0\n')
+NEWLINE
+(1, 'b', (143, 12), (143, 13), '            b=0\n')
+NAME
+(51, '=', (143, 13), (143, 14), '            b=0\n')
+OP
+(2, '0', (143, 14), (143, 15), '            b=0\n')
+NUMBER
+(4, '\n', (143, 15), (143, 16), '            b=0\n')
+NEWLINE
+(54, '\n', (144, 0), (144, 1), '\n')
+NL
+(6, '', (145, 0), (145, 0), 'def indents_gcd():\n')
+DEDENT
+(6, '', (145, 0), (145, 0), 'def indents_gcd():\n')
+DEDENT
+(6, '', (145, 0), (145, 0), 'def indents_gcd():\n')
+DEDENT
+(1, 'def', (145, 0), (145, 3), 'def indents_gcd():\n')
+NAME
+(1, 'indents_gcd', (145, 4), (145, 15), 'def indents_gcd():\n')
+NAME
+(51, '(', (145, 15), (145, 16), 'def indents_gcd():\n')
+OP
+(51, ')', (145, 16), (145, 17), 'def indents_gcd():\n')
+OP
+(51, ':', (145, 17), (145, 18), 'def indents_gcd():\n')
+OP
+(4, '\n', (145, 18), (145, 19), 'def indents_gcd():\n')
+NEWLINE
+(5, '    ', (146, 0), (146, 4), '    import fractions\n')
+INDENT
+(1, 'import', (146, 4), (146, 10), '    import fractions\n')
+NAME
+(1, 'fractions', (146, 11), (146, 20), '    import fractions\n')
+NAME
+(4, '\n', (146, 20), (146, 21), '    import fractions\n')
+NEWLINE
+(1, 'seen', (147, 4), (147, 8), '    seen = set()\n')
+NAME
+(51, '=', (147, 9), (147, 10), '    seen = set()\n')
+OP
+(1, 'set', (147, 11), (147, 14), '    seen = set()\n')
+NAME
+(51, '(', (147, 14), (147, 15), '    seen = set()\n')
+OP
+(51, ')', (147, 15), (147, 16), '    seen = set()\n')
+OP
+(4, '\n', (147, 16), (147, 17), '    seen = set()\n')
+NEWLINE
+(1, 'for', (148, 4), (148, 7), '    for i in indents.keys():\n')
+NAME
+(1, 'i', (148, 8), (148, 9), '    for i in indents.keys():\n')
+NAME
+(1, 'in', (148, 10), (148, 12), '    for i in indents.keys():\n')
+NAME
+(1, 'indents', (148, 13), (148, 20), '    for i in indents.keys():\n')
+NAME
+(51, '.', (148, 20), (148, 21), '    for i in indents.keys():\n')
+OP
+(1, 'keys', (148, 21), (148, 25), '    for i in indents.keys():\n')
+NAME
+(51, '(', (148, 25), (148, 26), '    for i in indents.keys():\n')
+OP
+(51, ')', (148, 26), (148, 27), '    for i in indents.keys():\n')
+OP
+(51, ':', (148, 27), (148, 28), '    for i in indents.keys():\n')
+OP
+(4, '\n', (148, 28), (148, 29), '    for i in indents.keys():\n')
+NEWLINE
+(5, '        ', (149, 0), (149, 8), '        r = 1\n')
+INDENT
+(1, 'r', (149, 8), (149, 9), '        r = 1\n')
+NAME
+(51, '=', (149, 10), (149, 11), '        r = 1\n')
+OP
+(2, '1', (149, 12), (149, 13), '        r = 1\n')
+NUMBER
+(4, '\n', (149, 13), (149, 14), '        r = 1\n')
+NEWLINE
+(1, 'for', (150, 8), (150, 11), '        for s in seen:\n')
+NAME
+(1, 's', (150, 12), (150, 13), '        for s in seen:\n')
+NAME
+(1, 'in', (150, 14), (150, 16), '        for s in seen:\n')
+NAME
+(1, 'seen', (150, 17), (150, 21), '        for s in seen:\n')
+NAME
+(51, ':', (150, 21), (150, 22), '        for s in seen:\n')
+OP
+(4, '\n', (150, 22), (150, 23), '        for s in seen:\n')
+NEWLINE
+(5, '            ', (151, 0), (151, 12), '            if i%s==0:\n')
+INDENT
+(1, 'if', (151, 12), (151, 14), '            if i%s==0:\n')
+NAME
+(1, 'i', (151, 15), (151, 16), '            if i%s==0:\n')
+NAME
+(51, '%', (151, 16), (151, 17), '            if i%s==0:\n')
+OP
+(1, 's', (151, 17), (151, 18), '            if i%s==0:\n')
+NAME
+(51, '==', (151, 18), (151, 20), '            if i%s==0:\n')
+OP
+(2, '0', (151, 20), (151, 21), '            if i%s==0:\n')
+NUMBER
+(51, ':', (151, 21), (151, 22), '            if i%s==0:\n')
+OP
+(4, '\n', (151, 22), (151, 23), '            if i%s==0:\n')
+NEWLINE
+(5, '                ', (152, 0), (152, 16), '                r = 0\n')
+INDENT
+(1, 'r', (152, 16), (152, 17), '                r = 0\n')
+NAME
+(51, '=', (152, 18), (152, 19), '                r = 0\n')
+OP
+(2, '0', (152, 20), (152, 21), '                r = 0\n')
+NUMBER
+(4, '\n', (152, 21), (152, 22), '                r = 0\n')
+NEWLINE
+(1, 'break', (153, 16), (153, 21), '                break\n')
+NAME
+(4, '\n', (153, 21), (153, 22), '                break\n')
+NEWLINE
+(6, '', (154, 8), (154, 8), '        if r == 1:\n')
+DEDENT
+(6, '', (154, 8), (154, 8), '        if r == 1:\n')
+DEDENT
+(1, 'if', (154, 8), (154, 10), '        if r == 1:\n')
+NAME
+(1, 'r', (154, 11), (154, 12), '        if r == 1:\n')
+NAME
+(51, '==', (154, 13), (154, 15), '        if r == 1:\n')
+OP
+(2, '1', (154, 16), (154, 17), '        if r == 1:\n')
+NUMBER
+(51, ':', (154, 17), (154, 18), '        if r == 1:\n')
+OP
+(4, '\n', (154, 18), (154, 19), '        if r == 1:\n')
+NEWLINE
+(5, '            ', (155, 0), (155, 12), '            seen.add(i)\n')
+INDENT
+(1, 'seen', (155, 12), (155, 16), '            seen.add(i)\n')
+NAME
+(51, '.', (155, 16), (155, 17), '            seen.add(i)\n')
+OP
+(1, 'add', (155, 17), (155, 20), '            seen.add(i)\n')
+NAME
+(51, '(', (155, 20), (155, 21), '            seen.add(i)\n')
+OP
+(1, 'i', (155, 21), (155, 22), '            seen.add(i)\n')
+NAME
+(51, ')', (155, 22), (155, 23), '            seen.add(i)\n')
+OP
+(4, '\n', (155, 23), (155, 24), '            seen.add(i)\n')
+NEWLINE
+(6, '', (156, 4), (156, 4), '    return len(seen)\n')
+DEDENT
+(6, '', (156, 4), (156, 4), '    return len(seen)\n')
+DEDENT
+(1, 'return', (156, 4), (156, 10), '    return len(seen)\n')
+NAME
+(1, 'len', (156, 11), (156, 14), '    return len(seen)\n')
+NAME
+(51, '(', (156, 14), (156, 15), '    return len(seen)\n')
+OP
+(1, 'seen', (156, 15), (156, 19), '    return len(seen)\n')
+NAME
+(51, ')', (156, 19), (156, 20), '    return len(seen)\n')
+OP
+(4, '\n', (156, 20), (156, 21), '    return len(seen)\n')
+NEWLINE
+(54, '\n', (157, 0), (157, 1), '\n')
+NL
+(6, '', (158, 0), (158, 0), 'def main(argv):\n')
+DEDENT
+(1, 'def', (158, 0), (158, 3), 'def main(argv):\n')
+NAME
+(1, 'main', (158, 4), (158, 8), 'def main(argv):\n')
+NAME
+(51, '(', (158, 8), (158, 9), 'def main(argv):\n')
+OP
+(1, 'argv', (158, 9), (158, 13), 'def main(argv):\n')
+NAME
+(51, ')', (158, 13), (158, 14), 'def main(argv):\n')
+OP
+(51, ':', (158, 14), (158, 15), 'def main(argv):\n')
+OP
+(4, '\n', (158, 15), (158, 16), 'def main(argv):\n')
+NEWLINE
+(5, '    ', (159, 0), (159, 4), '    global semis\n')
+INDENT
+(1, 'global', (159, 4), (159, 10), '    global semis\n')
+NAME
+(1, 'semis', (159, 11), (159, 16), '    global semis\n')
+NAME
+(4, '\n', (159, 16), (159, 17), '    global semis\n')
+NEWLINE
+(1, 'global', (160, 4), (160, 10), '    global penalty\n')
+NAME
+(1, 'penalty', (160, 11), (160, 18), '    global penalty\n')
+NAME
+(4, '\n', (160, 18), (160, 19), '    global penalty\n')
+NEWLINE
+(1, 'source_path', (161, 4), (161, 15), '    source_path = argv[1]\n')
+NAME
+(51, '=', (161, 16), (161, 17), '    source_path = argv[1]\n')
+OP
+(1, 'argv', (161, 18), (161, 22), '    source_path = argv[1]\n')
+NAME
+(51, '[', (161, 22), (161, 23), '    source_path = argv[1]\n')
+OP
+(2, '1', (161, 23), (161, 24), '    source_path = argv[1]\n')
+NUMBER
+(51, ']', (161, 24), (161, 25), '    source_path = argv[1]\n')
+OP
+(4, '\n', (161, 25), (161, 26), '    source_path = argv[1]\n')
+NEWLINE
+(1, 'try', (162, 4), (162, 7), '    try:\n')
+NAME
+(51, ':', (162, 7), (162, 8), '    try:\n')
+OP
+(4, '\n', (162, 8), (162, 9), '    try:\n')
+NEWLINE
+(5, '        ', (163, 0), (163, 8), '        f = open(source_path,"r")\n')
+INDENT
+(1, 'f', (163, 8), (163, 9), '        f = open(source_path,"r")\n')
+NAME
+(51, '=', (163, 10), (163, 11), '        f = open(source_path,"r")\n')
+OP
+(1, 'open', (163, 12), (163, 16), '        f = open(source_path,"r")\n')
+NAME
+(51, '(', (163, 16), (163, 17), '        f = open(source_path,"r")\n')
+OP
+(1, 'source_path', (163, 17), (163, 28), '        f = open(source_path,"r")\n')
+NAME
+(51, ',', (163, 28), (163, 29), '        f = open(source_path,"r")\n')
+OP
+(3, '"r"', (163, 29), (163, 32), '        f = open(source_path,"r")\n')
+STRING
+(51, ')', (163, 32), (163, 33), '        f = open(source_path,"r")\n')
+OP
+(4, '\n', (163, 33), (163, 34), '        f = open(source_path,"r")\n')
+NEWLINE
+(1, 'analyze', (164, 8), (164, 15), '        analyze(f)\n')
+NAME
+(51, '(', (164, 15), (164, 16), '        analyze(f)\n')
+OP
+(1, 'f', (164, 16), (164, 17), '        analyze(f)\n')
+NAME
+(51, ')', (164, 17), (164, 18), '        analyze(f)\n')
+OP
+(4, '\n', (164, 18), (164, 19), '        analyze(f)\n')
+NEWLINE
+(1, 'tmp', (165, 8), (165, 11), '        tmp = 0\n')
+NAME
+(51, '=', (165, 12), (165, 13), '        tmp = 0\n')
+OP
+(2, '0', (165, 14), (165, 15), '        tmp = 0\n')
+NUMBER
+(4, '\n', (165, 15), (165, 16), '        tmp = 0\n')
+NEWLINE
+(1, 'print', (166, 8), (166, 13), '        print(indents_gcd())\n')
+NAME
+(51, '(', (166, 13), (166, 14), '        print(indents_gcd())\n')
+OP
+(1, 'indents_gcd', (166, 14), (166, 25), '        print(indents_gcd())\n')
+NAME
+(51, '(', (166, 25), (166, 26), '        print(indents_gcd())\n')
+OP
+(51, ')', (166, 26), (166, 27), '        print(indents_gcd())\n')
+OP
+(51, ')', (166, 27), (166, 28), '        print(indents_gcd())\n')
+OP
+(4, '\n', (166, 28), (166, 29), '        print(indents_gcd())\n')
+NEWLINE
+(1, 'for', (167, 8), (167, 11), '        for w in names:\n')
+NAME
+(1, 'w', (167, 12), (167, 13), '        for w in names:\n')
+NAME
+(1, 'in', (167, 14), (167, 16), '        for w in names:\n')
+NAME
+(1, 'names', (167, 17), (167, 22), '        for w in names:\n')
+NAME
+(51, ':', (167, 22), (167, 23), '        for w in names:\n')
+OP
+(4, '\n', (167, 23), (167, 24), '        for w in names:\n')
+NEWLINE
+(53, '#    print w', (168, 8), (168, 20), '        #    print w\n')
+COMMENT
+(54, '\n', (168, 20), (168, 21), '        #    print w\n')
+NL
+(5, '            ', (169, 0), (169, 12), '            if len(w)>=3 and len(w)<=20:\n')
+INDENT
+(1, 'if', (169, 12), (169, 14), '            if len(w)>=3 and len(w)<=20:\n')
+NAME
+(1, 'len', (169, 15), (169, 18), '            if len(w)>=3 and len(w)<=20:\n')
+NAME
+(51, '(', (169, 18), (169, 19), '            if len(w)>=3 and len(w)<=20:\n')
+OP
+(1, 'w', (169, 19), (169, 20), '            if len(w)>=3 and len(w)<=20:\n')
+NAME
+(51, ')', (169, 20), (169, 21), '            if len(w)>=3 and len(w)<=20:\n')
+OP
+(51, '>=', (169, 21), (169, 23), '            if len(w)>=3 and len(w)<=20:\n')
+OP
+(2, '3', (169, 23), (169, 24), '            if len(w)>=3 and len(w)<=20:\n')
+NUMBER
+(1, 'and', (169, 25), (169, 28), '            if len(w)>=3 and len(w)<=20:\n')
+NAME
+(1, 'len', (169, 29), (169, 32), '            if len(w)>=3 and len(w)<=20:\n')
+NAME
+(51, '(', (169, 32), (169, 33), '            if len(w)>=3 and len(w)<=20:\n')
+OP
+(1, 'w', (169, 33), (169, 34), '            if len(w)>=3 and len(w)<=20:\n')
+NAME
+(51, ')', (169, 34), (169, 35), '            if len(w)>=3 and len(w)<=20:\n')
+OP
+(51, '<=', (169, 35), (169, 37), '            if len(w)>=3 and len(w)<=20:\n')
+OP
+(2, '20', (169, 37), (169, 39), '            if len(w)>=3 and len(w)<=20:\n')
+NUMBER
+(51, ':', (169, 39), (169, 40), '            if len(w)>=3 and len(w)<=20:\n')
+OP
+(4, '\n', (169, 40), (169, 41), '            if len(w)>=3 and len(w)<=20:\n')
+NEWLINE
+(5, '                ', (170, 0), (170, 16), '                tmp+=10\n')
+INDENT
+(1, 'tmp', (170, 16), (170, 19), '                tmp+=10\n')
+NAME
+(51, '+=', (170, 19), (170, 21), '                tmp+=10\n')
+OP
+(2, '10', (170, 21), (170, 23), '                tmp+=10\n')
+NUMBER
+(4, '\n', (170, 23), (170, 24), '                tmp+=10\n')
+NEWLINE
+(53, '#tmp /= len(names)', (171, 8), (171, 26), '        #tmp /= len(names)\n')
+COMMENT
+(54, '\n', (171, 26), (171, 27), '        #tmp /= len(names)\n')
+NL
+(6, '', (172, 8), (172, 8), '        penalty += tmp\n')
+DEDENT
+(6, '', (172, 8), (172, 8), '        penalty += tmp\n')
+DEDENT
+(1, 'penalty', (172, 8), (172, 15), '        penalty += tmp\n')
+NAME
+(51, '+=', (172, 16), (172, 18), '        penalty += tmp\n')
+OP
+(1, 'tmp', (172, 19), (172, 22), '        penalty += tmp\n')
+NAME
+(4, '\n', (172, 22), (172, 23), '        penalty += tmp\n')
+NEWLINE
+(1, 'print', (173, 8), (173, 13), '        print(penalty)\n')
+NAME
+(51, '(', (173, 13), (173, 14), '        print(penalty)\n')
+OP
+(1, 'penalty', (173, 14), (173, 21), '        print(penalty)\n')
+NAME
+(51, ')', (173, 21), (173, 22), '        print(penalty)\n')
+OP
+(4, '\n', (173, 22), (173, 23), '        print(penalty)\n')
+NEWLINE
+(1, 'print', (174, 8), (174, 13), '        print(bpenalty)\n')
+NAME
+(51, '(', (174, 13), (174, 14), '        print(bpenalty)\n')
+OP
+(1, 'bpenalty', (174, 14), (174, 22), '        print(bpenalty)\n')
+NAME
+(51, ')', (174, 22), (174, 23), '        print(bpenalty)\n')
+OP
+(4, '\n', (174, 23), (174, 24), '        print(bpenalty)\n')
+NEWLINE
+(1, 'print', (175, 8), (175, 13), '        print(cpenalty)\n')
+NAME
+(51, '(', (175, 13), (175, 14), '        print(cpenalty)\n')
+OP
+(1, 'cpenalty', (175, 14), (175, 22), '        print(cpenalty)\n')
+NAME
+(51, ')', (175, 22), (175, 23), '        print(cpenalty)\n')
+OP
+(4, '\n', (175, 23), (175, 24), '        print(cpenalty)\n')
+NEWLINE
+(1, 'print', (176, 8), (176, 13), '        print(tpenalty)\n')
+NAME
+(51, '(', (176, 13), (176, 14), '        print(tpenalty)\n')
+OP
+(1, 'tpenalty', (176, 14), (176, 22), '        print(tpenalty)\n')
+NAME
+(51, ')', (176, 22), (176, 23), '        print(tpenalty)\n')
+OP
+(4, '\n', (176, 23), (176, 24), '        print(tpenalty)\n')
+NEWLINE
+(6, '', (177, 4), (177, 4), '    except:\n')
+DEDENT
+(1, 'except', (177, 4), (177, 10), '    except:\n')
+NAME
+(51, ':', (177, 10), (177, 11), '    except:\n')
+OP
+(4, '\n', (177, 11), (177, 12), '    except:\n')
+NEWLINE
+(5, '        ', (178, 0), (178, 8), "        print 'Your code doesn\\'t exist. Max points. '\n")
+INDENT
+(1, 'print', (178, 8), (178, 13), "        print 'Your code doesn\\'t exist. Max points. '\n")
+NAME
+(3, "'Your code doesn\\'t exist. Max points. '", (178, 14), (178, 54), "        print 'Your code doesn\\'t exist. Max points. '\n")
+STRING
+(4, '\n', (178, 54), (178, 55), "        print 'Your code doesn\\'t exist. Max points. '\n")
+NEWLINE
+(1, 'sys', (179, 8), (179, 11), '        sys.exit(0)\n')
+NAME
+(51, '.', (179, 11), (179, 12), '        sys.exit(0)\n')
+OP
+(1, 'exit', (179, 12), (179, 16), '        sys.exit(0)\n')
+NAME
+(51, '(', (179, 16), (179, 17), '        sys.exit(0)\n')
+OP
+(2, '0', (179, 17), (179, 18), '        sys.exit(0)\n')
+NUMBER
+(51, ')', (179, 18), (179, 19), '        sys.exit(0)\n')
+OP
+(4, '\n', (179, 19), (179, 20), '        sys.exit(0)\n')
+NEWLINE
+(54, '\n', (180, 0), (180, 1), '\n')
+NL
+(6, '', (181, 0), (181, 0), 'if __name__ == "__main__":\n')
+DEDENT
+(6, '', (181, 0), (181, 0), 'if __name__ == "__main__":\n')
+DEDENT
+(1, 'if', (181, 0), (181, 2), 'if __name__ == "__main__":\n')
+NAME
+(1, '__name__', (181, 3), (181, 11), 'if __name__ == "__main__":\n')
+NAME
+(51, '==', (181, 12), (181, 14), 'if __name__ == "__main__":\n')
+OP
+(3, '"__main__"', (181, 15), (181, 25), 'if __name__ == "__main__":\n')
+STRING
+(51, ':', (181, 25), (181, 26), 'if __name__ == "__main__":\n')
+OP
+(4, '\n', (181, 26), (181, 27), 'if __name__ == "__main__":\n')
+NEWLINE
+(5, '    ', (182, 0), (182, 4), '    main(sys.argv)\n')
+INDENT
+(1, 'main', (182, 4), (182, 8), '    main(sys.argv)\n')
+NAME
+(51, '(', (182, 8), (182, 9), '    main(sys.argv)\n')
+OP
+(1, 'sys', (182, 9), (182, 12), '    main(sys.argv)\n')
+NAME
+(51, '.', (182, 12), (182, 13), '    main(sys.argv)\n')
+OP
+(1, 'argv', (182, 13), (182, 17), '    main(sys.argv)\n')
+NAME
+(51, ')', (182, 17), (182, 18), '    main(sys.argv)\n')
+OP
+(4, '\n', (182, 18), (182, 19), '    main(sys.argv)\n')
+NEWLINE
+(6, '', (183, 0), (183, 0), '')
+DEDENT
+(0, '', (183, 0), (183, 0), '')
+ENDMARKER
+2
+360
+170
+40
 10

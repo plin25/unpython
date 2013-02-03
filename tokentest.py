@@ -104,9 +104,9 @@ def analyze(f):
     indspaces = 0
     curindent = -1
     for t in tokenize.generate_tokens(f.readline):
-        #print(t)
+        print(t)
         tok_type = tok_name[t[0]]
-        #print(tok_type)
+        print(tok_type)
         if (tok_type == 'NAME'):
             if t[1] not in reserved:
                 names.add(t[1])
@@ -175,7 +175,7 @@ def main(argv):
         print(cpenalty)
         print(tpenalty)
     except:
-        print 'Your code doesn\'t work'
+        print 'Your code doesn\'t exist. Max points. '
         sys.exit(0)
 
 if __name__ == "__main__":
