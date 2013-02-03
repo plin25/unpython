@@ -95,16 +95,23 @@ b=0
 bc=0
 bd=0
 bpenalty=0
+cpenalty=0
 semis = 0
 def analyze(f):
-    global b,bc,bd,bpenalty,semis
+    global b,bc,bd,bpenalty,cpenalty,semis
     for t in tokenize.generate_tokens(f.readline):
         tok_type = tok_name[t[0]]
-        if (tok_type == 'NAME') == True:
+        if (tok_type == 'NAME'):
             if t[1] not in reserved:
                 names.add(t[1])
             elif t[1]=="if" or t[1]=="elif":
                 b=1
+        elif tok_type == 'COMMENT' or (tok_type == 'STRING' and "\"\"\"" in t[1]):
+            print(t)
+            """
+				STUFF
+            """
+            cpenalty+=10;
         if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):
             bc+=1
         elif b and (t[1]=="True" or t[1]=="False"):
@@ -136,6 +143,7 @@ def main(argv):
     penalty += tmp
     print(penalty)
     print(bpenalty)
+    print(cpenalty)
 
 if __name__ == "__main__":
     main(sys.argv)
