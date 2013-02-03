@@ -169,8 +169,8 @@ def lines(f):
         wspb += len(re.findall(' ,;:',l))
         wspb += len(re.findall('  +[=<>*+-/%]',l))
         wspb += len(re.findall('[!=<>*+-/%]  +',l))
-        wspb += len(re.findall('[^ ][<>!=+-%/]',l))
-        wspb += len(re.findall('[<>!=+-%/][^ ',l))
+        wspb += len(re.findall('[^ ][<>!=+\-%/]',l))
+        wspb += len(re.findall('[<>!=+\-%/][^ ]',l))
     return (lp,wspb)
 
 def punish(p):
