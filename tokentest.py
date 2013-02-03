@@ -91,6 +91,10 @@ tok_names = {0: 'ENDMARKER',
  53: 'N_TOKENS',
  51: 'OP'}
 
+b=0
+bc=0
+bd=0
+bpenalty=0
 semis = 0
 def analyze(f):
     global semis
@@ -99,6 +103,19 @@ def analyze(f):
         if tok_type == 'NAME':
             if t[1] not in reserved:
                 names.add(t[1])
+            elif t[1]=="if" or t[1]=="elif":
+                b=1
+        if b and (t=="==" or t==">" or t==">=" or t=="<=" or t=="<" or t=="!="):
+            bc+=1
+        elif b and (t=="True" of t=="False"):
+            bd+=1
+        elif b and t==":":
+            if bc <=5:
+               bpenalty+=10
+            bpenalty-=bd
+            bd=0   
+            bc=0
+            b=0
         elif tok_type == 'OP':
             if t[1] == ';':
                 semis += 1
