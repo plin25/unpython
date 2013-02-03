@@ -96,8 +96,11 @@ bc=0
 bd=0
 bpenalty=0
 semis = 0
+indents = dict()
 def analyze(f):
     global b,bc,bd,bpenalty,semis
+    indspaces = 0
+    curindent = -1
     for t in tokenize.generate_tokens(f.readline):
         tok_type = tok_name[t[0]]
         if (tok_type == 'NAME') == True:
@@ -105,6 +108,16 @@ def analyze(f):
                 names.add(t[1])
             elif t[1]=="if" or t[1]=="elif":
                 b=1
+        elif tok_type == 'OP':
+            if t[1] == ';':
+                semis += 1
+        elif tok_type == 'INDENT':
+            if curindent != len(t[1]):
+                if len(t[1]) not in indents:
+                    indents[len(t[1])] = 1
+                else:
+                    indents[len(t[1])] += 1
+                curindent = len(t[1])
         if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):
             bc+=1
         elif b and (t[1]=="True" or t[1]=="False"):
@@ -116,9 +129,19 @@ def analyze(f):
             bd=0   
             bc=0
             b=0
-        elif tok_type == 'OP':
-            if t[1] == ';':
-                semis += 1
+
+def indents_gcd():
+    import fractions
+    seen = set()
+    for i in indents.keys():
+        r = 1
+        for s in seen:
+            if i%s==0:
+                r = 0
+                break
+        if r == 1:
+            seen.add(i)
+    return len(seen)
 
 def main(argv):
     global semi
@@ -128,6 +151,9 @@ def main(argv):
     f = open(source_path,"r")
     analyze(f)
     tmp = 0
+    print(indents_gcd())
+#    for ins in indents:
+#        print ins,indents[ins]
     for w in names:
         #print w
         if len(w)>=3 and len(w)<=20:
