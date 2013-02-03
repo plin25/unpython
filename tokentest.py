@@ -186,9 +186,9 @@ def main(argv):
     f = open(source_path,"r")
     analyze(f)
     tmp = 0
-    print(indents_gcd()) #TODO punish this
+    print(indents_gcd()) 
     f.seek(0)
-    global lp,wspb #TODO punish this
+    global lp,wspb 
     lines(f)
     for w in names:
     #    print w
@@ -196,6 +196,9 @@ def main(argv):
             tmp+=10
     #tmp /= len(names)
     penalty += tmp
+    penalty -= lp*5
+    penalty -= wspb*5
+    penalty -= indents_gcd()*7
     print(penalty)
     print(bpenalty)
     print(cpenalty)
