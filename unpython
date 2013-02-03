@@ -114,6 +114,7 @@ def pf(x):
 
 def main(argv):
     sp = argv[1];    f = open(sp,"r");    penalty = analyze(f);    punish(penalty)
+    print 'Your code too pretty: ',(penalty*10),' numbers were prime factored.'
     try:
      execfile(sp);
     except:

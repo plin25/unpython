@@ -19,6 +19,8 @@ Weirder spacing is better -- surrounding operators with more than one space is r
 Inconsistent indentation is rewarded
 Try-Excepts and Fors are sinful
 
+In conclusion, the better your coding practices, the more time is wasted. In fact, unpython is actually written too well. When run on itself, it prime factors 2380 numbers... then infinite loops because it tries run itself on itself and then itself on itself on itself... and so forth.
+
 TODO:
 Make globals encouraged
 Imports should be in the middle of the function
