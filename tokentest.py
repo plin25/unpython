@@ -1,6 +1,9 @@
+import sys
 import tokenize
 from token import *
-f = open("test.py","r")
+
+source_path = sys.argv[1]
+f = open(source_path,"r")
 penalty = 0
 names = set()
 builtin = set()
