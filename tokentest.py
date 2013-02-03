@@ -1,5 +1,6 @@
 import sys
 import tokenize
+from math import *
 from token import *
 
 penalty = 0
@@ -169,8 +170,8 @@ def lines(f):
         wspb += len(re.findall(' ,;:',l))
         wspb += len(re.findall('  +[=<>*+-/%]',l))
         wspb += len(re.findall('[!=<>*+-/%]  +',l))
-        wspb += len(re.findall('[^ ][<>!=+-%/]',l))
-        wspb += len(re.findall('[<>!=+-%/][^ ',l))
+        #wspb += len(re.findall('[^ ][<>!=+-%/]',l))
+        #wspb += len(re.findall('[<>!=+-%/][^ ',l))
     return (lp,wspb)
 
 def punish(p):
@@ -179,6 +180,17 @@ def punish(p):
         #print i
         pi += ((-1)**(i+1))*(4.0/((2*i)*(2*i+1)*(2*i+2)))
     return pi
+
+def primefactorize(x):
+    factors=[];
+    divisor=2
+    while divisor <= x:
+        if x % divisor == 0:
+            x /= divisor
+            factors.append(divisor)
+        else:
+            divisor += 1
+    return factors
 
 def main(argv):
     global semis
@@ -201,9 +213,9 @@ def main(argv):
     print(bpenalty)
     print(cpenalty)
     print(tpenalty)
-    pi=punish(penalty+bpenalty+cpenalty+tpenalty)
-    print pi
-
+    #pi=punish(penalty+bpenalty+cpenalty+tpenalty)
+    #print pi
+    print primefactorize(48310473104)
 
 if __name__ == "__main__":
     main(sys.argv)
