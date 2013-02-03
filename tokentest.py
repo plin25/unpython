@@ -91,14 +91,20 @@ tok_names = {0: 'ENDMARKER',
  53: 'N_TOKENS',
  51: 'OP'}
 
+semis = 0
 def analyze(f):
+    global semis
     for t in tokenize.generate_tokens(f.readline):
-        if tok_name[t[0]] == 'NAME':
+        tok_type = tok_name[t[0]]
+        if tok_type == 'NAME':
             if t[1] not in reserved:
                 names.add(t[1])
-                print(t[1])
+        elif tok_type == 'OP':
+            if t[1] == ';':
+                semis += 1
 
 def main(argv):
+    global semi
     global penalty
     source_path = argv[1]
     f = open(source_path,"r")
