@@ -170,10 +170,8 @@ def lines(f):
         wspb += len(re.findall(' ,;:',l))
         wspb += len(re.findall('  +[=<>*+-/%]',l))
         wspb += len(re.findall('[!=<>*+-/%]  +',l))
-        #wspb += len(re.findall('[^ ][<>!=+-%/]',l))
-        #wspb += len(re.findall('[<>!=+-%/][^ ',l))
-        wspb += len(re.findall('[^ ][<>!=+\-%/]',l))
-        wspb += len(re.findall('[<>!=+\-%/][^ ]',l))
+        wspb += len(re.findall('[^ ][<>!+\-%/]',l))
+        wspb += len(re.findall('[<>!+\-%/][^ ]',l))
     return (lp,wspb)
 
 def punish(p):
@@ -223,6 +221,5 @@ def main(argv):
     punish(penalty+bpenalty+cpenalty+tpenalty)
     #print pi
     #print primefactorize(48310473104)
-
 if __name__ == "__main__":
     main(sys.argv)
