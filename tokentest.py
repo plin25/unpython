@@ -3,9 +3,9 @@ from token import *
 f = open("test.py","r")
 penalty = 0
 names = set()
-notnames = set()
+builtin = set()
 
-map(lambda x:notnames.add(x), [
+map(lambda x:builtin.add(x), [
 "abs","divmod","input","open","staticmethod",
 "all","enumerate","int","ord","str",
 "any","eval","isinstance","pow","sum",
@@ -41,7 +41,8 @@ for t in tokenize.generate_tokens(f.readline):
             print(t[1])
 tmp = 0
 for w in names:
-    tmp += len(w)
+	if len(w)>=3 and len(w)<=20:
+		tmp+=10
 tmp /= len(names)
-penalty += tmp*3.0
+penalty += tmp
 print(penalty)
