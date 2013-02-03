@@ -96,10 +96,13 @@ def analyze():
             if t[1] not in reserved:
                 names.add(t[1])
                 print(t[1])
-tmp = 0
-for w in names:
-	if len(w)>=3 and len(w)<=20:
-		tmp+=10
-tmp /= len(names)
-penalty += tmp
-print(penalty)
+
+def main():
+    analyze()
+    tmp = 0
+    for w in names:
+    if len(w)>=3 and len(w)<=20:
+        tmp+=10
+    tmp /= len(names)
+    penalty += tmp
+    print(penalty)
