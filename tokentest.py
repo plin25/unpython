@@ -2,7 +2,7 @@ import sys
 import tokenize
 from token import *
 
-source_path = sys.argv[2]
+source_path = sys.argv[1]
 f = open(source_path,"r")
 penalty = 0
 names = set()
@@ -99,6 +99,7 @@ def analyze():
             if t[1] not in reserved:
                 names.add(t[1])
                 print(t[1])
+analyze()
 tmp = 0
 for w in names:
 	if len(w)>=3 and len(w)<=20:
