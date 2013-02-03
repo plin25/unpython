@@ -104,9 +104,9 @@ def analyze(f):
     indspaces = 0
     curindent = -1
     for t in tokenize.generate_tokens(f.readline):
-        print(t)
+        #print(t)
         tok_type = tok_name[t[0]]
-        print(tok_type)
+        #print(tok_type)
         if (tok_type == 'NAME'):
             if t[1] not in reserved:
                 names.add(t[1])
@@ -172,9 +172,10 @@ def lines(f):
     return (lp,wspb)
     
 def punish(p):
-    pi=3
-    for i in range (1,p):
-        pi+=((-1)**(i+1))(4/((2*i)*(2*i+1)*(2*i+2)))
+    pi=3.0
+    for i in range (1,p*10):
+        #print i
+        pi += ((-1)**(i+1))*(4.0/((2*i)*(2*i+1)*(2*i+2)))
     return pi
 
 def main(argv):
