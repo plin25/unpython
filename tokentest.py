@@ -105,11 +105,11 @@ def analyze(f):
                 names.add(t[1])
             elif t[1]=="if" or t[1]=="elif":
                 b=1
-        if b and (t=="==" or t==">" or t==">=" or t=="<=" or t=="<" or t=="!="):
+        if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):
             bc+=1
-        elif b and (t=="True" of t=="False"):
+        elif b and (t[1]=="True" of t[1]=="False"):
             bd+=1
-        elif b and t==":":
+        elif b and t[1]==':':
             if bc <=5:
                bpenalty+=10
             bpenalty-=bd
