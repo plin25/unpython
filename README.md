@@ -1,6 +1,8 @@
 unpython
 ========
 
+Remember functional code that is also pretty? I don't. Pretty code is for wusses and makes the rest of us feel bad.
+
 Take all good coding practices and PENALIZE THEM DURING RUNTIME.
 
 
@@ -18,7 +20,7 @@ What we can remember implementing:
 
 variable/function names must be <3 characters or >20 characters long
 
-`==True` is highly encouraged
+`==True` is highly encouraged (We REALLY need to make sure, you know?)
 
 Semicolons are GREAT -- put as many commands on one line as possible
 
@@ -31,7 +33,7 @@ Inconsistent indentation is rewarded
 Try-Excepts and Fors are sinful
 
 
-In conclusion, the better your coding practices, the more time is wasted. In fact, unpython is actually written too well. When run on itself, it prime factors 2380 numbers... then infinite loops because it tries run itself on itself and then itself on itself on itself... and so forth.
+In conclusion, the better your coding practices, the more time is wasted. In fact, to our shame, unpython is actually written too well. When run on itself, it prime factors 2380 numbers... then infinite loops because it tries run itself on itself and then itself on itself on itself... and so forth.
 
 TODO
 ========
