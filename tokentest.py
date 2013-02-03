@@ -156,13 +156,13 @@ def indents_gcd():
     return len(seen)
 
 
-lp = 0 #line pen
+lp = 0 #lines greater than 80 chars
 wspb = 0 # bad white space
 def lines(f):
     import re
     global lp, wspb
     for l in f.readlines():
-        if len(l) < 80:
+        if len(l) > 79:
             lp +=      1
         wspb +=  len(re.findall('[([{] ',l))
         wspb  +=  len(re.findall(' [([)\]}]'   ,l)   )
