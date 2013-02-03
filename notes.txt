@@ -2,3 +2,5 @@ xrange vs range
 globals
 functions over 50 lines
 proper spacing around operators
+imports all one line
+imports defined in function
