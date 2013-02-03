@@ -27,9 +27,21 @@ map(lambda x:reserved.add(x), [
 "if","pass","yield","break","except","import","print","class","exec","in","raise",
 "continue","finally","is","return","def","for","lambda","try"])
 
+indents = dict()
 def analyze(f):
-   penalty=0;   b=0;   bc=0;  bd=0; bp=0;   cp=0;   tp=0;   semis = 0; indents = dict()
-   
+   penalty=0; 
+   penalty+=token_analyze(f)
+   tmp = 0
+   f.seek(0)
+   lp, wspb=lines(f)
+   for w in names:
+        if len(w)>=3 and len(w)<=20:
+             tmp+=10
+   penalty+=tmp ;penalty-=lp*10 ;    penalty -= wspb/10   ;    penalty -= indents_gcd(indents)*5;
+   return penalty
+
+def token_analyze(f):
+   bp=0;cp=0;tp=0;b=0;bc=0;bd=0;semis = 0; 
    indspaces = 0
    curindent = -1
    for t in tokenize.generate_tokens(f.readline):
@@ -61,15 +73,8 @@ def analyze(f):
             if bc <=5:
                bp+=10
             bp-=bd*10  ;            bd=0   ;            bc=0;            b=0
-   tmp = 0
-   f.seek(0)
-   lp, wspb=lines(f)
-   for w in names:
-        if len(w)>=3 and len(w)<=20:
-             tmp+=10
-   penalty+=tmp ;penalty-=lp*10 ;    penalty -= wspb/10   ;    penalty -= indents_gcd(indents)*5;
-   penalty+=bp+cp+tp
-   return penalty
+   return (bp+cp+tp)
+
 
 def indents_gcd(indents):
      seen = set()
@@ -89,11 +94,14 @@ def lines(f):
     for l in f.readlines():
         if len(l) > 79:
             lp +=      1
-        wspb +=  len(re.findall('[([{] ',l)); wspb  +=  len(re.findall(' [([)\]}]'   ,l)   )
+        wspb +=  len(re.findall('[([{] ',l)); wspb  +=  len(re.findall(' [)\]}]'   ,l)   )
         wspb += len(re.findall(' ,;:',l));     wspb += len(re.findall('  +[=<>*+-/%]',l))
-        wspb += len(re.findall('[!=<>*+-/%]  +',l))
+        wspb += len(re.findall('[!=<>*+\-/%]  +',l))
+        wspb += len(re.findall('  +[!=<>*+\-/%]',l))
         #wspb += len(re.findall('[^ ][<>!=+-%/]',l));        #wspb += len(re.findall('[<>!=+-%/][^ ',l))
-        wspb += len(re.findall('[^ ][<>!=+\-%/]',l));    wspb += len(re.findall('[<>!=+\-%/][^ ]',l))
+        wspb += len(re.findall('[^ ][<>!]',l));    wspb += len(re.findall('[<>!][^ ]',l))
+        wspb -= len(re.findall('( +)[+!\-*/%]\1',l))
+    print wspb
     return (lp,wspb)
 
 

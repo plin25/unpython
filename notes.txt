@@ -4,3 +4,104 @@ functions over 50 lines
 proper spacing around operators
 imports all one line
 imports defined in function
+
+
+4 spaces per indentation level
+    make indentation a multiple of each other
+    n spaces per indentation
+    tabs
+    8 space tabs
+
+continuation lines should align wrapped elements vertically using implicit line
+joining inside parentheses, brackets and braces
+
+if hanging indent, no arguments on first line, all indented more
+if defined at script level, two spaces okay
+
+never mix tabs and spaces
+
+limit all lines to a max of 79 characters
+docstrings or comments limt to 72 characters
+
+Separate top-level function and class definitions with two blank lines.
+
+Method definitions inside a class are separated by a single blank line.
+
+Use blank lines in functions, sparingly, to indicate logical sections.
+
+Extra blank lines may be used (sparingly) to separate groups of related functions.
+
+Blank lines may be omitted between a bunch of related one-liners (e.g. a set of dummy implementations).
+
+(^L) form feed character to seperate pages of related code
+
+UTF-8 or latin-1, but mostly utf-8
+
+imports on seperate lines
+
+okay if from ... eg: from subprocess import Popen, PIPE
+
+Imports are always put at the top of the file,
+just after any module comments and docstrings,
+and before module globals and constants.
+
+Imports should be grouped in the following order:
+    standard library imports
+    related third party imports
+    local application/library specific imports
+
+You should put a blank line between each group of imports.
+
+Put any relevant __all__ specification after the imports.
+
+only use absolute imports
+
+avoid space:
+    Immediately inside parentheses, brackets or braces
+    Immediately before a comma, semicolon, or colon
+    Immediately before the open parenthesis that starts the argument list of a function call
+    Immediately before the open parenthesis that starts an indexing or slicing
+    More than one space around an assignment (or other) operator to align it with another
+
+always surround with single space:
+    assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >,
+    !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not)
+
+always have same amount of whitespace around binary operator
+never use more than one whitespace around binary operator (*-/%,etc)
+
+don't use spaces around the = sign when used to indicate a keyword argument or a default parameter value
+
+no more than one statement per line
+
+no statements on if, else, try, finally, lines.
+never fold lines that don't need to be
+
+Comments should be complete sentences if more than a couple words
+block comments should be complete paragraphs/sentences
+
+inline comments should start at least two spaces from end of stuff
+
+docstrings, apparently: http://www.python.org/dev/peps/pep-0257/
+
+consistent naming
+
+Never use as single character variable names
+    'l' (lowercase letter el),
+    'O' (uppercase letter oh),
+    'I' (uppercase letter eye)
+
+Modules should have short, all-lowercase names. Maybe udnerscores
+
+class names use the CapWords convention. Maybe underscore beginning for internal class use
+
+Function names should be lowercase, with words separated by underscores as necessary to improve readability
+mixedCase is allowed only in contexts where that's already the prevailing style
+
+Always use self for the first argument to instance methods
+Always use cls for the first argument to class methods
+
+Comparisons to singletons like None should always be done with is or is not, never the equality operators
+Also, beware of writing if x when you really mean if x is not None -- e.g. when testing whether a variable or argument that defaults to None was set to some other value. The other value might have a type (such as a container) that could be false in a boolean context!
+
+
