@@ -221,6 +221,6 @@ def main(argv):
     punish(penalty+bpenalty+cpenalty+tpenalty)
     #print pi
     #print primefactorize(48310473104)
-#4
+#4lkj
 if __name__ == "__main__":
     main(sys.argv)
