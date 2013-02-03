@@ -96,20 +96,25 @@ bc=0
 bd=0
 bpenalty=0
 cpenalty=0
+tpenalty=0
 semis = 0
 def analyze(f):
-    global b,bc,bd,bpenalty,cpenalty,semis
+    global b,bc,bd,bpenalty,cpenalty,tpenalty,semis
     for t in tokenize.generate_tokens(f.readline):
+        #print(t)
         tok_type = tok_name[t[0]]
+        #print(tok_type)
         if (tok_type == 'NAME'):
             if t[1] not in reserved:
                 names.add(t[1])
             elif t[1]=="if" or t[1]=="elif":
                 b=1
+            if t[1]=='try':
+                tpenalty += 10
         elif tok_type == 'COMMENT' or (tok_type == 'STRING' and "\"\"\"" in t[1]):
-            print(t)
+            #print(t)
             """
-				STUFF
+                STUFF
             """
             cpenalty+=10;
         if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):
@@ -128,22 +133,26 @@ def analyze(f):
                 semis += 1
 
 def main(argv):
-    global semi
+    global semis
     global penalty
-    global bpenalty
     source_path = argv[1]
-    f = open(source_path,"r")
-    analyze(f)
-    tmp = 0
-    for w in names:
-        #print w
-        if len(w)>=3 and len(w)<=20:
-            tmp+=10
-    #tmp /= len(names)
-    penalty += tmp
-    print(penalty)
-    print(bpenalty)
-    print(cpenalty)
+    try:
+        f = open(source_path,"r")
+        analyze(f)
+        tmp = 0
+        for w in names:
+        #    print w
+            if len(w)>=3 and len(w)<=20:
+                tmp+=10
+        #tmp /= len(names)
+        penalty += tmp
+        print(penalty)
+        print(bpenalty)
+        print(cpenalty)
+        print(tpenalty)
+    except:
+        print 'Your code doesn\'t work'
+        sys.exit(0)
 
 if __name__ == "__main__":
     main(sys.argv)
