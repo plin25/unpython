@@ -132,7 +132,7 @@ def analyze(f):
             cpenalty+=10;
         if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):
             bc+=1
-        elif b and (t[1]=="True" or t[1]=="False"):
+        elif b and (t[1]=="True" or t[1]=="is" or t[1]=="False"):
             bd+=1
         elif b and t[1]==':':
             if bc <=5:
@@ -155,28 +155,45 @@ def indents_gcd():
             seen.add(i)
     return len(seen)
 
+
+lp = 0 #line pen
+wspb = 0 # bad white space
+def lines(f):
+    import re
+    global lp, wspb
+    for l in f.readlines():
+        if len(l) < 80:
+            lp +=      1
+        wspb +=  len(re.findall('[([{] ',l))
+        wspb  +=  len(re.findall(' [([)\]}]'   ,l)   )
+        wspb += len(re.findall(' ,;:',l))
+        wspb += len(re.findall('  +[=<>*+-/%]',l))
+        wspb += len(re.findall('[=<>*+-/%]  +',l))
+    return (lp,wspb)
+
+
 def main(argv):
     global semis
     global penalty
     source_path = argv[1]
-    try:
-        f = open(source_path,"r")
-        analyze(f)
-        tmp = 0
-        print(indents_gcd())
-        for w in names:
-        #    print w
-            if len(w)>=3 and len(w)<=20:
-                tmp+=10
-        #tmp /= len(names)
-        penalty += tmp
-        print(penalty)
-        print(bpenalty)
-        print(cpenalty)
-        print(tpenalty)
-    except:
-        print 'Your code doesn\'t exist. Max points. '
-        sys.exit(0)
+    f = open(source_path,"r")
+    analyze(f)
+    tmp = 0
+    print(indents_gcd()) #TODO punish this
+    f.seek(0)
+    global lp,wspb #TODO punish this
+    lines(f)
+    for w in names:
+    #    print w
+        if len(w)>=3 and len(w)<=20:
+            tmp+=10
+    #tmp /= len(names)
+    penalty += tmp
+    print(penalty)
+    print(bpenalty)
+    print(cpenalty)
+    print(tpenalty)
+
 
 if __name__ == "__main__":
     main(sys.argv)
