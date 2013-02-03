@@ -3,9 +3,9 @@ from token import *
 f = open("test.py","r")
 penalty = 0
 names = set()
-notnames = set()
+builtin = set()
 
-map(lambda x:notnames.add(x), [
+map(lambda x:builtin.add(x), [
 "abs","divmod","input","open","staticmethod",
 "all","enumerate","int","ord","str",
 "any","eval","isinstance","pow","sum",
