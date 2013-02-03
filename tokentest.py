@@ -170,7 +170,12 @@ def lines(f):
         wspb += len(re.findall('  +[=<>*+-/%]',l))
         wspb += len(re.findall('[=<>*+-/%]  +',l))
     return (lp,wspb)
-
+    
+def punish(p):
+    pi=3
+    for i in range (1,p):
+        pi+=((-1)**(i+1))(4/((2*i)*(2*i+1)*(2*i+2)))
+    return pi
 
 def main(argv):
     global semis
@@ -193,6 +198,8 @@ def main(argv):
     print(bpenalty)
     print(cpenalty)
     print(tpenalty)
+    pi=punish(penalty+bpenalty+cpenalty+tpenalty)
+    print pi
 
 
 if __name__ == "__main__":
