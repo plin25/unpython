@@ -2,8 +2,6 @@ import sys
 import tokenize
 from token import *
 
-source_path = sys.argv[1]
-f = open(source_path,"r")
 penalty = 0
 names = set()
 builtin = set()
@@ -93,19 +91,25 @@ tok_names = {0: 'ENDMARKER',
  53: 'N_TOKENS',
  51: 'OP'}
 
-def analyze():
+def analyze(f):
     for t in tokenize.generate_tokens(f.readline):
         if tok_name[t[0]] == 'NAME':
             if t[1] not in reserved:
                 names.add(t[1])
                 print(t[1])
 
-def main():
-    analyze()
+def main(argv):
+    global penalty
+    source_path = argv[1]
+    f = open(source_path,"r")
+    analyze(f)
     tmp = 0
     for w in names:
-    if len(w)>=3 and len(w)<=20:
-        tmp+=10
+        if len(w)>=3 and len(w)<=20:
+            tmp+=10
     tmp /= len(names)
     penalty += tmp
     print(penalty)
+
+if __name__ == "__main__":
+    main(sys.argv)
