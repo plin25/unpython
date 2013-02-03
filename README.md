@@ -17,7 +17,7 @@ What we can remember implementing:
 
 variable/function names must be <3 characters or >20 characters long
 
-==True is highly encouraged
+`==True` is highly encouraged
 
 Semicolons are GREAT -- put as many commands on one line as possible
 
