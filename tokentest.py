@@ -132,7 +132,7 @@ def analyze(f):
             cpenalty+=10;
         if b and (t[1]=="==" or t[1]==">" or t[1]==">=" or t[1]=="<=" or t[1]=="<" or t[1]=="!="):
             bc+=1
-        elif b and (t[1]=="True" or t[1]=="False"):
+        elif b and (t[1]=="True" or t[1]=="is" or t[1]=="False"):
             bd+=1
         elif b and t[1]==':':
             if bc <=5:
