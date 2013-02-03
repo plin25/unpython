@@ -172,14 +172,18 @@ def lines(f):
         wspb += len(re.findall('[!=<>*+-/%]  +',l))
         #wspb += len(re.findall('[^ ][<>!=+-%/]',l))
         #wspb += len(re.findall('[<>!=+-%/][^ ',l))
+        wspb += len(re.findall('[^ ][<>!=+\-%/]',l))
+        wspb += len(re.findall('[<>!=+\-%/][^ ]',l))
     return (lp,wspb)
 
 def punish(p):
-    pi=3.0
-    for i in range (1,p*10):
-        #print i
-        pi += ((-1)**(i+1))*(4.0/((2*i)*(2*i+1)*(2*i+2)))
-    return pi
+    for i in range(1,p*10):
+        print i,': ', primefactorize(i)
+#    pi=3.0
+#    for i in range (1,p*10):
+#        #print i
+#        pi += ((-1)**(i+1))*(4.0/((2*i)*(2*i+1)*(2*i+2)))
+#    return pi
 
 def primefactorize(x):
     factors=[];
@@ -199,9 +203,9 @@ def main(argv):
     f = open(source_path,"r")
     analyze(f)
     tmp = 0
-    print(indents_gcd()) #TODO punish this
+    print(indents_gcd()) 
     f.seek(0)
-    global lp,wspb #TODO punish this
+    global lp,wspb 
     lines(f)
     for w in names:
     #    print w
@@ -209,13 +213,16 @@ def main(argv):
             tmp+=10
     #tmp /= len(names)
     penalty += tmp
+    penalty -= lp
+    #penalty -= wspb
+    penalty -= indents_gcd()
     print(penalty)
     print(bpenalty)
     print(cpenalty)
     print(tpenalty)
-    #pi=punish(penalty+bpenalty+cpenalty+tpenalty)
+    punish(penalty+bpenalty+cpenalty+tpenalty)
     #print pi
-    print primefactorize(48310473104)
+    #print primefactorize(48310473104)
 
 if __name__ == "__main__":
     main(sys.argv)
