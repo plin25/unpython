@@ -154,6 +154,12 @@ def indents_gcd():
         if r == 1:
             seen.add(i)
     return len(seen)
+    
+    
+def lines(f):
+    for l in f.readline: 
+        print l
+ 
 
 def main(argv):
     global semis
